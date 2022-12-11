@@ -52,13 +52,15 @@ For viewing case files, click on the view case files option on the cases page af
 However if a file is not translated, you will be met with a warning, and will have to remain on the same page for a few minutes:
 ![image](https://user-images.githubusercontent.com/77325198/206891685-5c2f047e-ffda-4c5f-aad2-05015790d330.png)
 
+#### *NOTE : Translation is a slow process and can take up to 10+ minutes for a pdf to be translated depending upon the size of the file and number of pages.  
+
 3) There is a basic search option in the search by files to help you find any file you require:
 ![image](https://user-images.githubusercontent.com/77325198/206891721-94d9853a-a7ca-4050-ae3a-3799b3a6cfe7.png)
 
 4) To add files, click on the add files option and browse the file:
 ![image](https://user-images.githubusercontent.com/77325198/206891793-38ea995a-c488-42b0-b0be-caa82116a27a.png)
  
- *NOTE: The server this api is being hosted on MIGHT go on an overload as it is a free service, as a result the categories may sometimes not show a response.
+ #### *NOTE: The server this api is being hosted on MIGHT go on an overload as it is a free service, as a result the categories may sometimes not show a response.
 
 ### Case progress:
 To view the case progress simply click on view case progress after selecting the case on the main cases page
