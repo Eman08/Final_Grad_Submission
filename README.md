@@ -1,6 +1,6 @@
 # Lawflow: 
 
-A legal management application for lawyers with several other hands on features that may help make their work easier
+A legal management application for lawyers with several other hands on features that may help make their work easier.
 Note: This application is best viewed on screens of 15 inches and compatible with WINDOWS OS only.
 
 ## Downloading the installer:
