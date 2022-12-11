@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lawflow-3c5b7",
+  "private_key_id": "bdb98d011358778e3cf03a961b0103bcdbebe52a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDpGCzBBXQQkWUk\naD1OPbYHvBelJWgiboGmuqWNGpV4ACVYSZdvrVVitWkrC6fuO0uY2lpZJbQQT81q\nv8ue4bHyulZGr12CqvecY7lQhveT9A1mS4Xz0UalDEx7nymHODtSqxqfF8+hjbqs\n0bQp18L+uGFdt/3hDxZkS5PzgRPmkJ0qbzLUiF/9xrasUFrWuauJnepyAEBLgNbN\n/P+DzpYNn5rNiPZiTgxnnKrDv0UdPKJ/HjR7and/F8TeQmaa8QbhE3rihVZDlt1G\n2Vxj3UsozYAF7EGi79qZbDSwPBbUx7EpyH/ckwb7vNpFaJ8boffmJGg8A6q2vZre\nL1Xj3UrzAgMBAAECggEATa9i6wm4PvVWMiYTmIn0qutDLiUjaaZOy5SVLEvZ2N6j\nk6MjN3MbbARuAoyl8T4N2emcBu4L7wvJuHQnltI9jloP+wrjLXNxhsutrWruBH9o\nH9m30STEWKmaq/DF1G0nSEwCWVeEOaGUv5g8ZV2lfWNR//wcPu/aVJ7jtlokmcih\n3qXBxWcmH0kVXD5NuncYiVXSuoZ3VKJk3F0EUuSC9lHpGte6d0C/asEGSRFAWMA8\n88O0c5gqtJtBwfdY1imoKV15BXqnuX9lNFXQK2FbWiA0wI/DRIyhe/lKOp1EhpSU\nG2vmqKvnHB/n5/uOhRd0sw46uIQx0Tl9uPQvCEN3MQKBgQD4i7kTeqkxe80altYD\nyzE4Tajp0PtN2k112rjAGkGu8KT+W/BrWDF0sov7Bd+TuAmw5ZBbHBx2FPKm1bye\nctmkUpMsXIWGhG1zfvVJ/Aiz/B6vqN9+gabgle0eHR9cvPDFNMl4FxtAdfImtUeE\noQDbYamNW0HN+QKDu9hRsTvixQKBgQDwFdHlLh62afsOM/SJ5zaPB7/iXMqymWfG\ngvY6TZ9ORIOJhJjJH5fKgotjap3UlJEKKoGKPlDcoGNZXyvaPESxWoNfe85iNGyi\nTOg3Da59fTtJN3e/0jgxQdczaIaSzsLBG1KAynpJRtExuWRTmOpeAYDzyX41GOy6\nO2BGmeHyVwKBgQDcxhAB84TyxYtswOsdt5Hi92jBOLbhcrY3p69QRIJvyKZmongu\ngcp8ZFTfB1qPtnw1O9U8eP33Dah09Yp0HISi6A5+6zhYQq2OWAm+TDfW2G7Rjeno\nT3ZSLBrSEwBWuiYMplUHbU7xtVMBeykp8HH4bQnU3GjZcwT+yw7dkdcmGQKBgQCU\nl8yrHdpgaEO8TKfDWllIOTGn9mp2E8BI+vFOsJAyrvECghDWGjmmWxnOVESPN8x1\nEE3QtDTz+EjFHcRUdAzIAA9jX4si+PNrmFH5EPy4KnQxIqV5EbE5u1hoNv9jiZi8\nUB7GG4uIIs6DCg1wOCqGOEQJnuIAFwcdVHaH++H+TQKBgQDXQBwYWelkcBzsKKmH\nQF8A0+o1CGuPR64PlciXiH8cm1v8fmX8LWBlVXAqz8LxGw5J0ZcBjORJ5o3msWvu\n4sIpQPxNZyGClIV8fFL8GpRyLMsjZwfU9b3ur93zx1X+FCMPb7Xa5LCjN7fAV7Vg\nk3Ds5XbeySedLaVlr+v/n9OJtA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "translation@lawflow-3c5b7.iam.gserviceaccount.com",
+  "client_id": "110701155843941460859",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/translation%40lawflow-3c5b7.iam.gserviceaccount.com"
+}
