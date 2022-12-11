@@ -10,9 +10,9 @@ Download the file installer and unzip it, here you will find a lawflow.exe file
 
 For the purpose of this testing we have already set up an account that you may wish to use:
 
-**Username : AbeeraAmir**
+### **Username : AbeeraAmir**
 
-**Password: Test123**
+### **Password: Test123**
 
 ## Application overview:
 
