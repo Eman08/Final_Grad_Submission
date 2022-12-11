@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lawflow-3c5b7",
+  "private_key_id": "c46e2c6daf79ee40476ac9f56c3b32c91668d308",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDWAjSTPTJUml4d\nc+K2whzwF2fFlUdDRpN7lXPkPkNdsrBw0NCuvFvddrQyUx08HHFbEHbZjsJRKwQT\nUgYi8PegQYCu/rfJ7fvVee9DWCSmLunMT5fCbv/RzzF0ZQ9ntfCIlKYVqIyoQeaR\n3zvY3xf86abNhZIdnnToB8q2qMs1Pm96QQLcKV+41RKrHNLhbrfgSplJA9zq7my+\n2MTQ7BJzbccKbzwzR8A3DI07cG1k1tUr5l1t8c5YwdI/TKRwiEcWg5sbA/31ri9L\nABAU7YOqXG+JHfeyQG3oSKetDUOJOnHksaGoX6ZE60juiQGmpGlnpDRfN+96KDA4\nBO0r1EKDAgMBAAECggEASX7qZWKP5WQ6TC0fQBp766xuE/oHRkB3p+qUqV8EraoP\nVD8yW8AOYIlCq0HF+X3fJCIMXvzbGRsHxEbYGqncsOmt8utBXRTg9thwZhVgSL41\nxtfSy5BpRLm+RzXpy3k9SPqb6zY+UA6Jy7D5kapUR6RKh6yGmKtxhLogUQi4+Oh9\n5nDf4iyZoQn88mOjWyiWiqWysDUmU+8vitgz/HrOtQOZ4c5P0IObcEpT/Fz7oKIi\ndZ3xYBTjQJ4kCOSUTV0rJulpgwPNC6t2d7uMUdCZU3C7GWYtTyPc2sTUYlGGfB52\nhyQPazzpQkQrXiNJlmjdPF5XoCDF9spGF4V2vf8oSQKBgQD/j/r5yKejQqnlib7D\nVHsSRsnK+WP7/pVcGPZw9eyUOOFeq/NTyWW/fF+P7J8S3ue0PSh1md2CiL012/F8\nRlGvnoJbVP1XDBuDEpUAV+wDLjybGJdk8wTmhEe4XYP7OJxhkZf3YKMEzBPcKQyX\nfqWSNXI5aSAwXHSomkLbAAt7hwKBgQDWYALJigVWnupgngLUs90YXO6+19ghJxE4\nTFlWkO5rEK0nwj7JekeZHG25Cw/SLz4KxFtZDwdqrS+EurQIcVqQAaBzE++ba0dr\nURa4jPZGH4mR6+kILrK4NoteclqVA/SmA5xB/3A8V3bw/lO1muGrcrb3zic8ugmZ\nlwHAmeNYJQKBgASi8xW3CzuOCREOB7T5gmYZfK2/Co5W1xTdqxLvk0Q5J/WUvwxl\nGgB4XC97RoOMIb4GYgaILRmiK3SfsejkSbUa9hh8GUCMCq+9FZD1B2YjX5wcvRpq\nwksAWWDB6ZQUOdoXTx+A1FRQ84dKA114Qb6+U30xKBFYjBFHAzF/9bVfAoGBAIez\n80+9DTAOHPPYUpZu3VCk04T/gZNK9b2bpxoDWMlxnwsCDVjhDR3BPzvZ4sP8n9uU\n/PZdayZ+RwxQW9LUXq22Oele/1h1CprGlAlzQhqVsDItEjDZzsyJyqOY4/pcrKvC\nsVGd72BjRam8dSUKzDwJvAUV/QSWB6mwS62uPJn5AoGBAL12aSy8ItECE2/3+dXM\nPmeJTfcQUBQHYVHl+fSph+4V4aI6C0RoiiJM+nsG43iES1gi8jonDE/rDrqulMeV\nNcAEK7TWMhXA4c6ZdfzAIa/iUoeT5/AbMUtHpy3XS0J/yLZFX0oPmS+E8FF4K1lx\nsQb1vAWud9AoJA9mRgN/8OWh\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-123@lawflow-3c5b7.iam.gserviceaccount.com",
+  "client_id": "108201020775223345615",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-123%40lawflow-3c5b7.iam.gserviceaccount.com"
+}
