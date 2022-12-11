@@ -4,8 +4,10 @@ A legal management application for lawyers with several other hands on features 
 Note: This application is best viewed on screens of 15 inches and compatible with WINDOWS OS only.
 
 ## Downloading the installer:
+Download the lawflow-win32-x64.zip folder from git main: 
+![image](https://user-images.githubusercontent.com/77325198/206903176-4ff06cd6-34a3-4b6b-963d-6745c8d6330d.png)
 
-Download the folder installer and unzip the file lawflow-win32-x64.zip, you will find a lawflow.exe file
+unzip the file lawflow-win32-x64.zip, you will find a lawflow.exe file
 ![image](https://user-images.githubusercontent.com/77325198/206891022-b6923c24-ef41-4b66-8d3d-1d6040c9c599.png)
 
 For the purpose of testing, we have already set up an account that you may wish to use:
