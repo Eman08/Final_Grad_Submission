@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="case_files.css" rel="stylesheet">
+    <link href="../Cases/generic.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <script type="module" src="category.js" > </script>
+  
+    <!-- <script type = "text/javascript" >
+      function myfunction(){
+      alert("I reach here");
+      } -->
+      </script>
+    
+    <title>Cases</title>
+  </head>
+  <body id="workflow">
+    
+  <div class="greenbar">
+    <img class="smallLogo" src="../assets/lawflow.png" >
+  </div>
+
+  <div class="topbar"> <img class="dp" src="../assets/display.jpg" >
+    <h1 margin-left="0px">Hello, Abeera Amir</h1>
+  </div>
+
+  </div>
+  <div class="lawflow">
+    <p>LAWFLOW</p>
+  </div>
+
+  <div class="dashboard"> <img class="iconDashboard" src="../assets/dashboard.png" >
+    <p>My Dashboard</p>
+  </div>
+
+<div class="search"> <img class="iconSearch" src="../assets/search.png" >
+  <p>Search</p>
+</div>
+
+<div class="cases"> <img class="iconCases" src="../assets/gavel.png" onclick="location.href='../Cases/cases.html'" >
+  <p>Cases</p>
+</div>
+
+<div class="contacts"> <img class="iconContacts" src="../assets/contacts.png" >
+  <p>Contacts</p>
+</div>
+
+<div class="calendar"> <img class="iconCalendar" src="../assets/calendar.png" onclick="location.href='../appointments_v2/appointments.html'">
+  <p>Calendar</p>
+</div>
+
+<div class="todo"> <img class="iconTodo" src="../assets/todo.png" onclick="location.href='../to_do_lists/todolist.html'" >
+  <p onclick="">To-Do List</p>
+</div>
+
+
+<div class="setting"> <img class="iconSetting" src="../assets/settings.png" onclick="location.href='../Settings/setting.html'">
+  <p>Settings</p>
+</div>
+
+<div class="title">
+  <i id="chevron" class="fa fa-chevron-left fa-lg" aria-hidden="true" ></i>
+  <h1 class="header">   Choose File Category</h1>
+  <h3 class="case_id"></h3>
+  <div id="category_select">
+
+  </div>
+</div>
+
+
+
+  </body> 
+</html>

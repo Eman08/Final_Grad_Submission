@@ -1,0 +1,312 @@
+.my_profile{
+  margin-top: 6vh;
+  border-radius: 10px;
+  /* border:1px solid grey; */
+  width:78vw;
+  height:2vh;
+  background-color: white;
+  align-items: center;
+  margin-bottom: -4vh;
+  padding: 4vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.privacy{
+  margin-top: 6vh;
+  border-radius: 10px;
+  /* border:1px solid grey; */
+  width:78vw;
+  height:2vh;
+  background-color: white;
+  align-items: center;
+  margin-bottom: -4vh;
+  padding: 4vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+
+.about_lawflow{
+  margin-top: 6vh;
+  border-radius: 10px;
+  background-color:white;
+  /* border:1px solid grey; */
+  width:78vw;
+  height:2vh;
+  padding: 4vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+#about_text{
+
+  position: absolute;
+  margin-top: -3vh;
+  margin-left: 4vw;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 3vh;
+
+}
+#profile_text{
+    position: absolute;
+    margin-top: -3.5vh;
+    margin-left: 4vw;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 3vh;
+}
+
+
+.material-symbols-outlined{
+  margin-top: -2vh;
+  position: absolute;
+}
+
+.fa-chevron-right{
+margin-left: 75vw;
+margin-top: 0vh;
+}
+
+
+/* .fa-chevron-left{
+
+  position: absolute;
+  margin-top: vh;
+  margin-left: -3vh;
+  cursor: pointer;
+  
+
+} */
+
+.userHeading{
+  position: absolute;
+  margin-left: 10vw;
+  margin-top: 4vh;
+
+}
+
+.profile{
+  position: absolute;
+  border-radius: 50%;
+  height: 5rem;
+  width:5rem;
+  margin-left: 3vw;
+  margin-top: 1.5vh;
+  border:1px solid black;
+  z-index:10000000;
+}
+
+.container{
+  margin-top: 4vh;
+}
+
+.profileForm{
+  margin-left: 40vw;
+  margin-bottom: -20vh;
+}
+
+.username{
+  margin-top:30vh;
+  position: absolute;
+  margin-left: -15vw;
+}
+
+.date_of_birth{
+  margin-top:30vh;
+  position: absolute;
+  margin-left: 10vw;
+}
+
+.email{
+  margin-top:45vh;
+  position: absolute;
+  margin-left: -15vw;
+}
+
+
+#cover-spin {
+  position:fixed;
+  width:100%;
+  left:0;right:0;top:0;bottom:0;
+  background-color: rgba(255,255,255,0.7);
+  z-index:9999;
+  display:none;
+}
+
+@-webkit-keyframes spin {
+from {-webkit-transform:rotate(0deg);}
+to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+  content:'';
+  display:block;
+  position:absolute;
+  left:50%;top:40%;
+  width:40px;height:40px;
+  border-style:solid;
+  border-color:black;
+  border-top-color:transparent;
+  border-width: 4px;
+  border-radius:50%;
+  -webkit-animation: spin .8s linear infinite;
+  animation: spin .8s linear infinite;
+}
+
+.about{
+  overflow-wrap: break-word;
+  height:30vh;
+  width:20vw;
+  font-size: 18px;
+}
+
+#para{
+  padding:1vh;
+}
+
+.myForm{
+  position: absolute;
+  border:1px solid red;
+
+  margin-left:2vw;
+  height:60vh;
+  margin-top:10vh;
+  border-radius: 5px;
+  width:78vw;
+  
+}
+
+.top{
+
+  background-color: white;
+  border: 1px solid lightgray;
+  position: absolute;
+  left:16.5vw;
+  height:13vh;
+  top:22vh;
+  border-radius: 5px;
+  width:78vw;
+  z-index: -1;
+}
+
+.bottom{
+  background-color: white;
+  border: 1px solid lightgray;
+  position: absolute;
+  left:16.5vw;
+  height:60vh;
+  top: 37vh;
+  border-radius: 5px;
+  width:78vw;
+  z-index: -1;
+
+}
+
+
+.fa-shield, .fa-user{
+  color:#283745
+}
+
+
+.editInfo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 4vh;
+  margin-left: 65vw;
+  width: 8vw;
+  padding: 1.3850415512465375vh 0.9765625vw 1.3850415512465375vh 0.9765625vw;
+  position: absolute;
+  background-color: #283745;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 0px;
+  outline: none;
+
+}
+
+.editInfo:hover{
+  background-color: #C1B189;
+  box-shadow: 2px 2px grey;
+  cursor: pointer;
+}
+
+
+.iconLogout{
+
+  position:absolute;
+  height: 3vh; 
+  width: auto; 
+  top: 3.3vh;
+  left: 2vw;
+  margin-left: 4vw;
+  float: left;
+  z-index: 3;
+  
+}
+
+
+.logout{
+
+  z-index: 3;
+  display: inline-block;
+  width: auto;
+  position:absolute;
+  color:#4B4A48;
+  font-size: 13px;
+  white-space: nowrap;
+  margin-top: 4vh;
+  margin-left: 0vw;
+
+
+}
+
+.logoutHolder{
+  position: absolute;
+  z-index: -1;
+  margin-top: -10.4vh;
+  margin-left: 78.4vw;
+  height: 100%;
+  width: 10vw;
+
+}
+
+.logoutHolder:hover{
+
+  cursor: pointer;
+  background-color: rgba(141, 122, 74, 0.8);
+
+}
+
+
+.settingAllIcons{
+  width: 3vh;
+  height: auto;
+}
+
+.lawflowAbout{
+  position: absolute;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  color: #4B4A48;
+  top: 25vh;
+  left: 17.5vw;
+  height: 60vh;
+  width: 140vh;
+  padding: 3rem;
+
+}
+
+.privacy, .my_profile:hover, .about_lawflow:hover{
+  border:1px solid grey;
+
+}

@@ -1,0 +1,53 @@
+body{
+  background-color:  #003a30;
+}
+.logo{
+  display: block;
+  margin-left:42%;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 18%;
+}
+.name{
+  display: block;
+  margin-left: 43%;
+  padding: 0;
+  margin-top: 0;
+  margin-right: auto;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+}
+
+.new-user{
+  margin-top: 0;
+  padding: 10px 36px;
+  background-color: #7cd175;
+  border-color: transparent;
+  border-radius: 40px;
+  margin-right: 20px;
+  font-size: 6px;
+  color: white;
+  font-size: 25px;
+  font-weight:500;
+  cursor: pointer;
+}
+
+.log-in{
+  padding: 10px 36px;
+  background-color: #d3b259;
+  border-color: transparent;
+  border-radius: 40px;
+  font-size: 6px;
+  color: white;
+  font-size: 25px;
+  font-weight:500;
+  cursor: pointer;
+}
+
+.btn{
+  margin-left: 35%;
+  margin-top: 0;
+}

@@ -1,0 +1,215 @@
+#workflow{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#workflow_display{
+    overflow:scroll;
+    overflow-x: hidden;
+    white-space:nowrap;
+    height: 455px;
+    margin-top:40px;
+}
+
+#workflow_display::-webkit-scrollbar {
+    width: 1.25vw;
+    height: 2vh;
+    
+  }
+  #workflow_display::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+    border-radius: 20px;
+  }
+  #workflow_display::-webkit-scrollbar-thumb {
+    background-color: #283745;
+    border-radius: 40px;
+    border: 4px solid rgba(0,0,0,0);
+    background-clip: content-box;
+    min-width: 3.284072249589491vh;
+    min-height: 1.6220600162206003vw;
+  }
+  #workflow_display:-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+    border-radius: 40px;
+  }
+
+#chevron{
+  float: left;
+  position: absolute;
+  margin-top:33px;
+  margin-left: -10px;
+}
+
+.header{
+  margin-left: 20px;
+}
+
+.subtaskForm{
+
+  visibility: hidden;
+  text-align: left;
+  color: #4B4A48;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -51.99306759098787vh;
+  margin-left: -19.53125vw;
+  padding: 4.3vh 4.3vh 1.9vw 1.9vw;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 13px;
+  font-weight: 400;
+  width:31.25vw;
+  height: 77.98960138648181vh;
+  font-weight: 500;
+  overflow: scroll;
+  overflow-x:hidden;
+  /* z-index: 2; */
+  
+
+}
+
+
+.full{
+  visibility: hidden; 
+  position: fixed;
+  background-color: #555;
+  opacity: 0.7;
+  height: 350vh;
+  width: 100vw;
+  /* z-index: 100; */
+
+}
+
+
+.cross{
+  float:right;
+}
+
+.cross:hover{
+  background-image: url("../assets/delRed.png");
+  cursor: pointer;
+
+}
+
+.addSub:hover{
+  background-color: #C1B189;
+  box-shadow: 2px 2px grey;
+  cursor: pointer;
+
+}
+
+.addSub{
+  margin-left: 6.2vw
+}
+
+
+.addSub{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 2vh;
+  width: 8vw;
+  padding: 1.733102253032929vh 1.171875vw 1.733102253032929vh 1.171875vw;
+  position: absolute;
+  background-color: #283745;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 0px;
+  outline: none;
+  z-index: 100;
+
+}
+
+#display_subtasks{
+  z-index: 100;
+}
+
+
+#edit_workflow{
+
+  visibility: hidden;
+  text-align: left;
+  color: #4B4A48;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30.99306759098787vh;
+  margin-left: -19.53125vw;
+  padding: 4.3vh 4.3vh 1.9vw 1.9vw;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 13px;
+  font-weight: 400;
+  width:31.25vw;
+  height: 48.98960138648181vh;
+  font-weight: 500;
+  overflow: scroll;
+  overflow-x:hidden;
+  z-index: 40;
+  
+
+}
+
+#taskDescription{
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  height:15vh;
+  width: 30vw;
+  resize: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tasktitle{
+  margin-top: 1vh;
+  width: 30vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#taskDescription::-webkit-scrollbar {
+  width: 1.25vw;
+  height: 2vh;
+  
+}
+#taskDescription::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+  border-radius: 20px;
+}
+#taskDescription::-webkit-scrollbar-thumb {
+  background-color: #283745;
+  border-radius: 40px;
+  border: 4px solid rgba(0,0,0,0);
+  background-clip: content-box;
+  min-width: 3.284072249589491vh;
+  min-height: 1.6220600162206003vw;
+}
+#taskDescription:-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0);
+  border-radius: 40px;
+}
+
+#submitbuttontask{
+  background-color: #283745;
+  height: 4vh;
+  width:8vw;
+  border-radius: 50px;
+  border:none;
+  color:white;
+  margin-left: -20vw;
+  cursor: pointer;
+  margin-top: 20vh;
+}
+
+.crosswf{
+  float:right;
+}
+
+.crosswf:hover{
+  background-image: url("../assets/delRed.png");
+  cursor: pointer;
+
+}

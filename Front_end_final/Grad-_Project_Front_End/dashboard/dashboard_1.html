@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+    
+    <link href="dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="../searchBar/search.css">
+    <link rel ="stylesheet" href="../generic.css">
+    <script src="dashboard.js" type="module" ></script>
+    <title>Dashboard</title>
+    
+</head>
+<body id="main-body">
+  <div id="cover-spin"></div>
+  <div class="greenbar">
+    <img class="smallLogo" src="../assets/lawflow.png" >
+  </div>
+
+
+  </div>
+  <div class="lawflow">
+    <p>LAWFLOW</p>
+  </div>
+
+<div class="dashboard" onclick="window.reload()"> <img class="iconDashboard" src="../assets/dashboard.png" >
+  <p>My Dashboard</p>
+</div>
+
+<div id="check1" class="search"> <img class="iconSearch" src="../assets/search.png">
+  <p>Search</p>
+</div>
+  
+  <div id="mySidenav" class="sidenav">
+    <p>Search</p>
+    <div class="example" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search.." id="search2">
+      <button type="button" id="searchALL"><i class="fa fa-search"></i></button>
+    </div>
+    <br><br>
+    <a href="javascript:void(0)" id="searchclosebtn" class="closebtn">&times;</a>
+    <label class="containerSearch">Search by Keyword
+      <input type="radio" name="radio" value = "keyword">
+      <span class="checkmarkS"></span>
+    </label>
+    <label class="containerSearch">Search by Filename
+      <input type="radio" name="radio" value = "filename">
+      <span class="checkmarkS"></span>
+    </label>
+    <label class="containerSearch">Search by Image
+      <input type="radio" id = "img" name="radio" value = "image">
+      <span class="checkmarkS"></span>
+    </label>
+    
+    <div id = "results" class = "results">
+    </div>
+   
+
+  <span style="font-size:14px;cursor:pointer" id="searhopennav"></span>
+</div>
+
+<div class="cases" onclick="location.href='../Cases/cases.html'"> <img class="iconCases" src="../assets/gavel.png"  onclick="location.href='../Cases/cases.html'"
+  >
+  <p>Cases</p>
+</div>
+
+
+<div class="calendar" onclick="location.href='../appointments_v2/appointments.html'"> <img class="iconCalendar" src="../assets/calendar.png" onclick="location.href='../appointments_v2/appointments.html'" >
+  <p>Calendar</p>
+</div>
+
+<div class="todo" onclick="location.href='../to_do_lists/todolist.html'" > <img class="iconTodo" src="../assets/todo.png" onclick="location.href='../to_do_lists/todolist.html'" >
+  <p>To-Do List</p>
+</div>
+
+
+<div class="setting" onclick="location.href='../Settings/setting.html'" > <img class="iconSetting" src="../assets/settings.png" onclick="location.href='../Settings/setting.html'">
+  <p onclick="location.href='../Settings/setting.html'">Settings</p>
+</div>
+
+  
+<div class="title">
+  <h1 id="main-title">Dashboard</h1>
+</div>
+  
+  <div class="welcome_back">
+  <div id="pfp"></div>
+  <div class="written_text" style="margin-top: -21.663778162911612vh">
+  <h3  style="margin-left:-80px" id="welcome-back"></h3>
+  <h4 class="dashboard-info"> Check your recent notifications, upcoming meetings scheduled for today <br>and latest progress analytics on your cases</h4>
+</div>
+</div>
+
+  <h4 style="text-align: center; position: fixed; z-index: -20; margin-left: 475px;" id="heading">Case Insights</h4>
+
+  <div class="workflow" id="wf">
+     <div class = "display" id="wf_display"></div>
+  </div>
+
+  <div class="appointments" id="appts">
+  <h3>Upcoming Meetings</h3>
+  <div class="appt" id="appt_display"></div>
+ </div>
+
+  <div class = "notifications">
+    <h3 style="margin-left: 6vw;">Notifications</h3>
+  <div id = "notification_display">
+
+  </div>
+  </div>
+  </body> 

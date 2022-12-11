@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="calendar_header">Calendar</title>
+    <link href = "https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+   
+    
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../searchBar/search.css">
+    <link rel ="stylesheet" href="../generic.css">
+    <link rel ="stylesheet" href="appointments.css">
+  
+   
+</head>
+<body class = "appt_body">
+    
+  <div id="cover-spin"></div>
+    
+  <div class="greenbar">
+    <img class="smallLogo" src="../assets/lawflow.png" >
+  </div>
+
+  <div class="topbar">
+    <h1 id="heading_main" style="margin-top:3vh;  font-weight: bold; font-size:32px"></h1>
+  </div>
+
+  </div>
+  <div class="lawflow">
+    <p>LAWFLOW</p>
+  </div>
+
+  <div class="dashboard" onclick="location.href='../dashboard/dashboard_1.html'" > <img class="iconDashboard" src="../assets/dashboard.png" >
+    <p>My Dashboard</p>
+  </div>
+
+  <div id="check1" class="search"> <img class="iconSearch" src="../assets/search.png">
+    <p>Search</p>
+  </div>
+    
+    <div id="mySidenav" class="sidenav">
+      <p>Search</p>
+      <div class="example" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." id="search2">
+        <button type="button" id="searchALL"><i class="fa fa-search"></i></button>
+      </div>
+      <br><br>
+      <a href="javascript:void(0)" id="searchclosebtn" class="closebtn">&times;</a>
+      <label class="containerSearch">Search by Keyword
+        <input type="radio" name="radio" value = "keyword">
+        <span class="checkmarkS"></span>
+      </label>
+      <label class="containerSearch">Search by Filename
+        <input type="radio" name="radio" value = "filename">
+        <span class="checkmarkS"></span>
+      </label>
+      <label class="containerSearch">Search by Image
+        <input type="radio" id = "img" name="radio" value = "image">
+        <span class="checkmarkS"></span>
+      </label>
+      
+      <div id = "results" class = "results">
+      </div>
+     
+  
+    <span style="font-size:14px;cursor:pointer" id="searhopennav"></span>
+  </div>
+  
+
+
+<div class="cases" onclick="location.href='../Cases/cases.html'"> <img class="iconCases" src="../assets/gavel.png" onclick="location.href='../Cases/cases.html'">
+  <p>Cases</p>
+</div>
+
+<div class="calendar" onclick="location.reload()"> <img class="iconCalendar" src="../assets/calendar.png" onclick="location.reload()" >
+  <p>Calendar</p>
+</div>
+
+<div class="todo" onclick="location.href='../to_do_lists/todolist.html'"> <img class="iconTodo" src="../assets/todo.png" onclick="location.href='../to_do_lists/todolist.html'" >
+  <p>To-Do List</p>
+</div>
+
+
+<div class="setting" onclick="location.href='../Settings/setting.html'"> <img class="iconSetting" src="../assets/settings.png" onclick="location.href='../Settings/setting.html'">
+  <p>Settings</p>
+</div>
+
+
+<div class="title">
+  <h1 style="font-size:30px; color: #4B4A48; margin-bottom:3vh; margin-top: 6vh;white-space: nowrap;
+  z-index: 3;">Calendar</h1>
+</div>
+  
+<div class="heloe">
+
+<div id="cover-spin"></div>
+<div class="container1"> 
+  <div class="calendarM">
+    <div class="month">
+      <i class="fas fa-angle-left prev"></i>
+      <div class="date">
+        <h1></h1>
+        <p></p>
+      </div>
+      <i class="fas fa-angle-right next"></i>
+    </div>
+    <div class="weekdays">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+    <div class="days"></div>
+  </div>
+</div>
+
+<button class="open-button" onclick="addEvent()" style ="font-size: 1.5rem;">+ Create Event</button>
+
+<div class="form-popup" id="myForm">
+  <div class="form-container">
+    <h1>Create Event</h1>
+    <br>
+
+    <label for="email"><b>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+    <input type="text" id="name" placeholder="Enter Name" name="email" required>
+
+    <label for="date"><b>&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+    <input type="date" id="date" placeholder="Enter Date" name="date" required>
+
+    <br><label for="stime"><b>Start Time&nbsp;&nbsp;</b></label>
+    <input type="time" id="stime" placeholder="dd-mm-yyyy" name="stime" required>
+
+    <label for="etime"><b>&nbsp;&nbsp;End Time&nbsp;&nbsp;&nbsp;</b></label>
+    <input type="time" id="etime" placeholder="Enter time" name="etime" required>
+    <br>
+    <label for="Description"><b>Description</b></label>
+    <input type="text" id="desc" placeholder="Enter Description" name="desc">
+
+    <label for="Participant/s"><b>&nbsp;&nbsp;Participant</b></label>
+    <input type="text" id="ptcp" placeholder="Enter Participant/s" name="part">
+
+    <button type="submit" id = "createEvent" class="btn">Create Event</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </div>
+</div>
+
+<div class="vl"></div>
+
+<div class = "eventDirectory"><p><b>Upcoming Events</b></p></div>
+<center>
+  <div class="scroll">
+    <div id="appt" class="appointments">
+      <div id="scroller">
+      <div class="stepper d-flex flex-column mt-5 ml-2" id="number1">
+       
+      </div>
+<!-- /.Vertical Steppers -->
+      </div>
+    </div>
+  </div>
+  </center>
+
+  <div class="delete"> <img class="delButton" src="../assets/settings.png" >
+    
+  </div>
+
+</div>
+
+
+<script src="appointments.js"></script>
+<!-- <script src="searchbar.js"> </script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+</html>

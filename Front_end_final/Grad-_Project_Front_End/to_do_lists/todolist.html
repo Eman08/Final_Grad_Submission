@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    <link href="todolist.css" rel="stylesheet">
+    <link href="../generic.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../searchBar/search.css">
+    <script src="todolist.js" type="module" > 
+    
+    </script>
+  
+      </script>
+    
+    <title>To Do List</title>
+  </head>
+  <body id="main-body">
+    <div id="cover-spin"></div>
+    <div class="greenbar">
+      <img class="smallLogo" src="../assets/lawflow.png" >
+    </div>
+  
+    <div class="topbar"> 
+      <h1 id="heading_main" margin-left="0px"></h1>
+    </div>
+  
+    </div>
+    <div class="lawflow">
+      <p>LAWFLOW</p>
+    </div>
+  
+    <div class="dashboard" onclick="location.href='../dashboard/dashboard_1.html'"> <img class="iconDashboard" src="../assets/dashboard.png" >
+      <p>My Dashboard</p>
+    </div>
+  
+    <div id="check1" class="search"> <img class="iconSearch" src="../assets/search.png">
+      <p>Search</p>
+    </div>
+      
+      <div id="mySidenav" class="sidenav">
+        <p>Search</p>
+        <div class="example" style="margin:auto;max-width:300px">
+          <input type="text" placeholder="Search.." id="search2">
+          <button type="button" id="searchALL"><i class="fa fa-search"></i></button>
+        </div>
+        <br><br>
+        <a href="javascript:void(0)" id="searchclosebtn" class="closebtn">&times;</a>
+        <label class="containerSearch">Search by Keyword
+          <input type="radio" name="radio" value = "keyword">
+          <span class="checkmarkS"></span>
+        </label>
+        <label class="containerSearch">Search by Filename
+          <input type="radio" name="radio" value = "filename">
+          <span class="checkmarkS"></span>
+        </label>
+        <label class="containerSearch">Search by Image
+          <input type="radio" id = "img" name="radio" value = "image">
+          <span class="checkmarkS"></span>
+        </label>
+        
+        <div id = "results" class = "results">
+        </div>
+       
+    
+      <span style="font-size:14px;cursor:pointer" id="searhopennav"></span>
+    </div>
+    
+  
+  <div class="cases" onclick="location.href='../Cases/cases.html'"> <img class="iconCases" src="../assets/gavel.png" onclick="location.href='../Cases/cases.html'">
+    <p onclick="location.href='../Cases/cases.html'">Cases</p>
+  </div>
+ 
+  
+  <div class="calendar" onclick="location.href='../appointments_v2/appointments.html'"> <img class="iconCalendar" src="../assets/calendar.png" onclick="location.href='../appointments_v2/appointments.html'" >
+    <p>Calendar</p>
+  </div>
+  
+  <div class="todo" onclick="location.reload()"> <img class="iconTodo" src="../assets/todo.png" onclick="location.reload()" >
+    <p onclick="location.href='todolist.html'">To-Do List</p>
+  </div>
+  
+  
+  <div class="setting" onclick="location.href='../Settings/setting.html'"> <img class="iconSetting" src="../assets/settings.png" onclick="location.href='../Settings/setting.html'" >
+    <p>Settings</p>
+  </div>
+  
+  <div class="title">
+    <h1>To Do List</h1>
+  </div>
+ 
+    <div class="divbox">  
+    <!-- Header of the page -->
+    <div class = "todo12" name = "todo">
+    <p class="title_bar"> To do</p>
+    <div class = "Display-todo" id="Display-todo" draggable="true"></div>
+    </div>
+
+    <div class = "inprogress" name="in-progress">
+      <p class="title_bar"> In Progress</p>
+      <div class = "Display-inprogress" id="Display-inprogress"></div>
+    </div>
+
+    <div class = "completed" name="completed">
+      <p class="title_bar"> Completed</p>
+      <div class = "Display-completed" id="Display-completed"></div>
+    </div>
+  </div>
+ 
+  </body> 
+</html>

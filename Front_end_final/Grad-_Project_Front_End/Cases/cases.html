@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="cases.css" rel="stylesheet">
+    <link rel="stylesheet" href="../searchBar/search.css">
+    <link href="../generic.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <script type="module" src="cases.js" > </script>
+  
+    
+    <title>Cases</title>
+  </head>
+  <body id="cases">
+    <div id = "cover-spin"></div>
+  <div class="greenbar">
+    <img class="smallLogo" src="../assets/lawflow.png" >
+  </div>
+
+  <div class="topbar"> 
+    <h1 id="heading_main"></h1>
+  </div>
+
+  </div>
+  <div class="lawflow">
+    <p>LAWFLOW</p>
+  </div>
+
+  <div class="dashboard" onclick="location.href='../dashboard/dashboard_1.html'" > <img class="iconDashboard" src="../assets/dashboard.png" >
+    <p>My Dashboard</p>
+  </div>
+
+  <div id="check1" class="search"> <img class="iconSearch" src="../assets/search.png">
+    <p>Search</p>
+  </div>
+    
+    <div id="mySidenav" class="sidenav">
+      <p>Search</p>
+      <div class="example" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." id="search2">
+        <button type="button" id="searchALL"><i class="fa fa-search"></i></button>
+      </div>
+      <br><br>
+      <a href="javascript:void(0)" id="searchclosebtn" class="closebtn">&times;</a>
+      <label class="containerSearch">Search by Keyword
+        <input type="radio" name="radio" value = "keyword">
+        <span class="checkmarkS"></span>
+      </label>
+      <label class="containerSearch">Search by Filename
+        <input type="radio" name="radio" value = "filename">
+        <span class="checkmarkS"></span>
+      </label>
+      <label class="containerSearch">Search by Image
+        <input type="radio" id = "img" name="radio" value = "image">
+        <span class="checkmarkS"></span>
+      </label>
+      
+      <div id = "results" class = "results">
+      </div>
+     
+  
+    <span style="font-size:14px;cursor:pointer" id="searhopennav"></span>
+  </div>
+  
+
+<div class="cases" onclick="location.href='../Cases/cases.html'"> <img class="iconCases" src="../assets/gavel.png" onclick="location.href='../Cases/cases.html'" >
+  <p>Cases</p>
+</div>
+
+
+<div class="calendar" onclick="location.href='../appointments_v2/appointments.html'"> <img class="iconCalendar" src="../assets/calendar.png" onclick="location.href='../appointments_v2/appointments.html'" >
+  <p>Calendar</p>
+</div>
+
+<div class="todo" onclick="location.href='../to_do_lists/todolist.html'"
+> <img class="iconTodo" src="../assets/todo.png" onclick="location.href='../to_do_lists/todolist.html'" >
+  <p>To-Do List</p>
+</div>
+
+
+<div class="setting" onclick="location.href='../Settings/setting.html'"> <img class="iconSetting" src="../assets/settings.png" onclick="location.href='../Settings/setting.html'">
+  <p>Settings</p>
+</div>
+
+
+<div class="title">
+  <h1>Cases</h1>
+</div>
+
+<div class="casesFS" id="casesFS">
+
+  <div class="FSbutton" id="FSbutton">
+    <img class="filterSize" src="../assets/filter.png"><p class="filterText">Add Filter</p>
+
+  </div>
+
+</div>
+
+<div id="AllCases" class="AllCases">
+
+</div>
+
+
+<div id="full" class="full">
+
+</div>
+
+
+<div id="filterAppear" class="filterAppear">
+  <img id = "closeFSwindow" class="closeFSwindow" src="../assets/del.png">
+  <h2 class="filterDivHeading">Filter Cases</h2>
+  <div class = "filterByType">
+    <p class="headingTypes">Case Type</p>
+    <!-- <button class ="filterTextBtn">Civil</button>
+    <button class ="filterTextBtn">Criminal</button>
+    <button class ="filterTextBtn">Family Law</button> -->
+    <label class="container">All
+      <input type="radio" checked="checked" name="radio" value="All">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Civil
+      <input type="radio" name="radio" value="Civil">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Criminal
+      <input type="radio" name="radio" value="Criminal">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Family
+      <input type="radio" name="radio" value="Family">
+      <span class="checkmark"></span>
+    </label>
+
+
+  </div>
+
+  <div class = "filterByType">
+    <p class="headingTypes">Court Type</p>
+
+    <label class="container">All
+      <input type="radio" name="radio" value="All">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Court of Appeal
+      <input type="radio" name="radio" value="Court of Appeal">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Court of First Instance
+      <input type="radio" name="radio" value="Court of First Instance">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Federal Supreme Court
+      <input type="radio" name="radio" value="Federal Supreme Court">
+      <span class="checkmark"></span>
+    </label>
+    
+  </div>
+
+  <div class = "filterByType">
+    <p class="headingTypes">Date</p>
+    <input type="date" class="filterDate" id="filterDate" data-date-format="DD/MM/YYYY">
+  </div>
+
+  <button id="filterSubmit" class="filterSubmit">Add Filter</button>
+
+</div>
+
+
+
+<div id="viewCase" class="viewCase">
+</div>
+
+<div id="gavel"></div>
+
+<div id="caseBox"></div>
+
+<button id="newcase" class="newcase">
+  <a class="link" href = "cases2test.html">New Case</a>
+</button>
+
+<div id="summary" class="summary">
+  <p class="SummaryTitle">Case Summary</p>
+</div>
+
+
+<div id ="viewclient" class="viewclient">
+  <p id="view_clients">View Client Details ></p>
+</div>
+
+<div id ="viewcaseprog" class="viewcaseprog">
+  <a class="link" href = "../workflow/workflow.html">View Case Progress ></a>
+</div>
+
+<div id ="viewfiles" class="viewfiles">
+  <a class="link" href = "viewfiles.html">View Case Files ></a>
+</div>
+
+
+<!-- <div class="client_details">
+  
+  <label for="cname">Name</label> <span id="name_regex"></span>
+  <input type="text" id="clientName" name="clientName">
+
+  <label for="dob">Date of Birth</label> <span id="dob_regex"></span>
+  <input type="date" id="clientDob" name="clientDob">
+
+  <label for="cname">Phone</label> <span id="phone_regex"></span>
+  <input type="text" id="clientPhone" name="clientPhone">
+
+  <label for="cname">Email</label> <span id="email_regex"></span>
+  <input type="email" id="clientEmail" name="clientEmail">
+  
+  <label for="cname">Address</label><span id="address_regex"></span>
+  <input type="text" id="clientAddress" name="clientAddress">
+</div> -->
+<div id="client_details">
+
+  <div class="DefendantForm">
+    <img id = "closeFSclient" class="closeFSclient" src="../assets/del.png">
+    <h3 class="subtaskHeading">Client Details</h3>
+    
+
+  <label for="cname">Name</label> <span id="name_regex"></span>
+  <input type="text" id="clientname_1" name="clientName">
+
+  <label for="dob">Date of Birth</label> <span id="dob_regex"></span>
+  <input type="text" id="dob_1" name="clientDob">
+
+  <label for="cname">Phone</label> <span id="phone_regex"></span>
+  <input type="text" id="phone_1" name="clientPhone">
+
+  <label for="cname">Email</label> <span id="email_regex"></span>
+  <input type="text" id="email_1" name="clientEmail">
+  
+  <label for="cname">Address</label><span id="address_regex"></span>
+  <input type="text" id="address_1" name="clientAddress">
+
+  </div>
+
+
+</div>
+
+  </body> 
+</html>

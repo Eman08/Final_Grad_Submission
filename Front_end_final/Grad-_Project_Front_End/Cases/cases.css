@@ -1,0 +1,1432 @@
+body {
+  overflow-x: hidden;
+  background-image: url('../assets/bg1.png');
+  background-repeat: repeat;
+  background-size: 100% 100%;
+
+
+}
+
+html{scroll-behavior:smooth}
+
+.AllCases{
+  border: 1px solid #ECECEC;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  background-color: #F9F6F0;
+  color:black;
+  margin-left: 13.671875vw;
+  margin-top: 30vh;
+  height: 65vh;
+  width: 29.947916666666668vw;
+  border-radius: 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1vh;
+}
+
+/* Filter and Sort for Cases */
+
+.casesFS{
+  position: absolute;
+  display: inline-block;
+  margin-left: 13.5vw;
+  margin-top: 24.5vh;
+  width: auto;
+  height: 4.5vh;
+}
+
+.FSbutton{
+
+  border-radius: 20vh;
+  border: 1px solid grey;
+  margin-left  : 1.4vw;
+  float: right;
+  width: 6vw;
+  height: 3vh;
+  background-color: white;
+  padding: 0.5vh 0.5vw 0.5vh 0.5vw;
+
+}
+
+.FSbutton:hover{
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+.filterSize{
+  width: 1.2vw;
+  margin-left: 0.3vw;
+  margin-top: 0.4vh;
+  height: auto;
+  float: left;
+}
+
+.filterText{
+  color: grey;
+  position: absolute;
+  font-size: 12px;
+  margin-top: 0.8vh;
+  margin-left: 3.4vh;
+
+}
+
+.filterAppear{
+  visibility: hidden;
+  padding: 1rem;
+  position: absolute;
+  border:1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  width: 22vw;
+  height: 67vh;
+  z-index: 10000;
+  margin-left: 36vw;
+  margin-top: 15vh;
+}
+
+.closeFSwindow{
+  position: absolute;
+  width: 1vw;
+  height: auto;
+  margin-left: 19vw;
+
+}
+
+.filterDivHeading{
+  color: #4B4A48;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -0.5vh;
+}
+
+.filterByType{
+  text-align: left;
+  padding: 0.2rem;
+  margin: 1rem;
+  
+}
+
+.filterTextBtn{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 50px;
+  border: 0;
+  font-size: 12px;
+  height: 4vh;
+  width: 8vw;
+  margin-left: 1vw;
+
+}
+
+.headingTypes{
+  font-size: 14px;
+}
+
+
+/* --------------------------------------- */
+.container {
+
+  
+  color: grey;
+  display: block;
+  position: relative;
+  padding-left: 1.5vw;
+  margin-right: 1vw;
+  margin-bottom: 0.5vw;
+  cursor: pointer;
+  user-select: none;
+  font-size: 13px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2vh;
+  width: 1vw;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #283745;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 0.7vh;
+  left: 0.35vw;
+  width: 0.6vh;
+  height: 0.3vw;
+  border-radius: 50%;
+  background: white;
+}
+
+.filterDate{
+  width: 17vw;
+}
+/* --------------------------------------- */
+
+
+
+
+/* Filter and Sort for Cases END */
+
+.viewCase{
+
+  position: absolute;
+  background-color:#283745;
+  margin-left: 45.572916666666664vw;
+  margin-top: 27.008310249307478vh;
+  height:65vh;
+  width: 50vw;
+  text-align: left;
+  color:white;
+  border-radius: 5px;
+}
+
+
+.viewfiles{
+  position: absolute;
+  margin-left: 83vw;
+  margin-top: 60vh;
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  font-size: small;
+}
+
+.viewfiles:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+
+.viewclient{
+  position: absolute;
+  margin-left: 83vw;
+  margin-top: 53vh;
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  font-size: small;
+}
+
+.viewclient:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.viewcaseprog{
+  position: absolute;
+  margin-left: 83vw;
+  margin-top: 50vh;
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  font-size: small;
+}
+
+.viewcaseprog:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.newcase {
+  position: absolute;
+  background-color:#bf9b30;
+  margin-left: 88.8671875vw;
+  margin-top: 13.850415512465373vh;
+  width: 6.510416666666667vw;
+  height: 5.54016620498615vh;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1.3850415512465375vh 0.9765625vw 1.3850415512465375vh 0.9765625vw;
+  background-color: #283745;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+}
+
+/* .newcase:hover{
+  cursor: pointer;
+  background-color: #bf9b30;
+  box-shadow: 1px 1px 1px 1px grey;
+} */
+
+.link{
+  color: #f2f3f4;
+  text-decoration: none;
+}
+
+ .summary{
+  position: absolute;
+  border:10px solid red;
+  background-color: white;
+  margin-left: 45.55vw;
+  margin-top: 69.5vh;
+  height:  25vh;
+  width: 49.9vw;
+  text-align: left;
+  color:white;
+  border: 1px solid lightgray;
+  border-radius: 0px 0px 5px 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-bottom: 2.5vh;
+} 
+
+.SummaryTitle{
+  color:#4B4A48;
+  text-align: left;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: left;
+  margin-left: 1vw;
+  
+}
+
+.AllCases::-webkit-scrollbar {
+  width: 1vw;
+  height: 2vh;
+  
+}
+.AllCases::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+  border-radius: 20px;
+}
+.AllCases::-webkit-scrollbar-thumb {
+  background-color: #283745;
+  border-radius: 5.54016620498615vh;
+  border: 4px solid rgba(0,0,0,0);
+  background-clip: content-box;
+  min-width: 3.284072249589491vh;
+  min-height: 1.6220600162206003vw;
+}
+.AllCases:-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0);
+  border-radius: 5.54016620498615vh;
+}
+
+/* ------------------------------- */
+
+.summary::-webkit-scrollbar {
+  width: 1vw;
+  height: 2vh;
+  
+}
+.summary::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+  border-radius: 2.770083102493075vh;
+}
+.summary::-webkit-scrollbar-thumb {
+  background-color: #283745;
+  border-radius: 5.54016620498615vh;
+  border: 4px solid rgba(0,0,0,0);
+  background-clip: content-box;
+  min-width: 3.284072249589491vh;
+  min-height: 1.6220600162206003vw;
+}
+.summary:-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0);
+  border-radius: 5.54016620498615vh;
+}
+
+/* Starting cases2.html */
+
+.title{
+  position: absolute;
+  color: #4B4A48;
+  margin-left: 3.3vw;
+  margin-top: 2vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  }
+
+.Subtitle{
+  width: 19.55671447196871vw;
+  height: 7.022471910112359vh;
+  position:absolute;
+  color: #006d5b;
+  margin-left: 2.2164276401564535vw;
+  margin-top: 7.724719101123595vh;
+  font-size: 14px;
+  z-index: 1;
+}
+
+
+.caseform{
+  position: absolute;
+  margin-top: 16.853932584269664vh;
+  margin-bottom: 21.06741573033708vh;
+  margin-left: 2.822685788787484vw;
+  padding: 25px 25px 25px 40px;
+  border-radius: 0.702247191011236vh;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 13px;
+  font-weight: 400;
+  width: 60.85919165580182vw;
+  height: 55.39325842696629vh;
+  font-weight: 500;
+  margin-bottom: 1.404494382022472vh;
+}
+
+.caseform1{
+  position: absolute;
+  margin-top: 16.853932584269664vh;
+  margin-bottom: 21.06741573033708vh;
+  margin-left: 2.822685788787484vw;
+  padding: 25px 25px 25px 40px;
+  border-radius: 0.702247191011236vh;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 13px;
+  font-weight: 400;
+  width: 60.85919165580182vw;
+  height: 53vh;
+  font-weight: 500;
+  margin-bottom: 1.404494382022472vh;
+}
+
+.caseformWorkflow{
+  margin-top: 5vh;
+  display: inline-block;
+
+}
+
+.text {
+
+  width: 53.82138200782269vw;
+  margin: 10px 10px 10px 10px;
+  margin-left: 1.607561929595828vw;
+  border-radius: 0.602247191011236vh;
+  border: 1px solid #555;
+  outline: none;
+  height: 25.089887640449437vh;
+  resize: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.descp{
+  margin-left: 1.607561929595828vw;
+}
+
+input[type=textarea]:focus, input[type=text]:focus {
+  border: 2px solid #555;
+}
+
+.backLink{
+  margin-top: 10.6vh;
+  margin-left: 1vw;
+  width: 1.2vw;
+  height: auto;
+  cursor: pointer;
+}
+
+
+input[type=text] {
+  width: 26vw;
+  display: block;
+  padding: 12px 20px;
+  margin: 1.10803324099723vh 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+.h2{
+  display: inline;
+  color: grey;
+  font-weight: 400;
+}
+
+
+.stepButton{
+  width: 26.07561929595828vw;
+  position: absolute;
+  margin-left: 64.77053455019556vw;
+  margin-top: 0vw;
+  color: grey;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+
+
+/* .step1{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 130px;
+  padding: 0px 0px 0px 25px;
+  border-radius: 4px;
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+} */
+
+
+/* .check{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+.header{
+
+  position: fixed;
+  width: 100%;
+  height: 13.5vh;
+  margin-left: 11.7vw;
+  margin-top: 11vh;
+  float: left;
+  z-index: 2;
+  background-color: #F9F6F0;
+}
+
+
+/* .step2{
+  height: 30%;
+  width: 100%;
+  background-color: white;
+} */
+
+/* The container */
+/* .container {
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+/* .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+
+/* Create a custom checkbox */
+/* .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-width: 1px;
+  border-color: #151515;
+  border-style: solid;
+} */ */
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* .container input:checked ~ .checkmark {
+  background-color: #047d69;
+}
+ */
+/* Create the checkmark/indicator (hidden when not checked) */
+/* .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+} */
+
+/* Show the checkmark when checked */
+/* .container input:checked ~ .checkmark:after {
+  display: block;
+} */
+
+/* Style the checkmark/indicator */
+/* .container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+} */
+
+/* .step2{
+  margin-top: 600px;
+} */
+
+
+/* .step3{
+  margin-top: 570px;
+}
+
+.step4{
+  position: absolute;
+  display: block;
+  margin-top: 640px;
+}
+
+.s2,.s3,.s4{
+  margin-bottom: 100px;
+  display: inline-block;
+} */
+
+/* .move{
+  display: block;
+  margin-left: 500px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+} */
+
+/* .vl {
+  display: block;
+  border-left: 6px solid #006d5b;
+  height: 2600px;
+  position: absolute;
+  left: 230px;
+}
+
+.hor {
+  border-top: 1px solid whitesmoke;
+  width: 1055px;
+  position: absolute;
+  margin-top: 40px;
+} */
+
+/* .head{
+  display: inline-block;
+}
+*/
+.circle{
+  position: inherit;
+  margin-left:-42px;
+  margin-top:15x;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+} 
+
+.tooltip {
+  position: relative;
+  margin-top: 5px;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  width: 15px;
+  height: auto;
+} 
+
+.workflow{
+  position: absolute;
+  margin-top: 16.62049861495845vh;
+  margin-left: 3.90625vw;
+  padding: 25px 25px 25px 40px;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  font-size: 12px;
+  font-weight: 400;
+  width: 61.848958333333336vw;
+  height: 48.47645429362881vh;
+  font-weight: 500;
+  margin-bottom: 0.6510416666666666vw;
+}
+
+.sidebar, .uploadedDocuments{
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  float: right;
+  width:  26.041666666666668vw;
+  height: 61.9vh;
+  margin-top: -3.3vh;
+  border-radius: 0px 5px 5px 0px;
+  margin-right: -1.6927083333333333vw;
+  background-color: #283745;
+  box-sizing: border-box;
+}
+
+.uploadedDocuments{
+  margin-top: -12.2vh;
+  overflow-y: auto;
+}
+
+.myselect{
+  font-size: 12px;
+  width: 26.041666666666668vw;
+  height:  5.54016620498615vh;
+  display: block;
+  padding: 1.6620498614958448vh 1.3020833333333333vw;
+  margin: 1vh 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+.accept{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 5vh;
+  width: auto;
+  padding: 1.3850415512465375vh 0.9765625vw 1.3850415512465375vh 0.9765625vw;
+  background-color: #283745;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 0px;
+  outline: none;
+
+}
+
+.filterSubmit, .goToCases, .SubmitForWorkflow, .addtask1, .caseDetailSubmit, .addPcpt, #browse, .addSub, .hidden, .clientSubmit, .finalSubmit, .yes{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 2vh;
+  width: 8vw;
+  padding: 1.3850415512465375vh 0.9765625vw 1.3850415512465375vh 0.9765625vw;
+  position: absolute;
+  background-color: #283745;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 0px;
+  outline: none;
+}
+
+.closeWindow{
+  float: right;
+  cursor: pointer;
+}
+
+
+.addSub{
+  margin-left: 8.2vw
+}
+
+.caseDetailSubmit{
+  margin-top: 4.5vh;
+  margin-left: 27vw;
+
+}
+
+.addPcpt{
+  width: 4vw;
+  margin-left: 27.34375vw;
+  margin-top: -6.232686980609419vh;
+}
+
+.SubmitForWorkflow{
+  margin-left: 9.765625vw;
+} 
+
+.filterSubmit:hover, .newcase:hover, .accept:hover, .goToCases:hover, .yes:hover, .finalSubmit:hover, .clientSubmit:hover, .hidden:hover, .addSub:hover, .addtask1:hover, .SubmitForWorkflow:hover, .caseDetailSubmit:hover, .addPcpt:hover, #browse:hover{
+  background-color: #C1B189;
+  box-shadow: 2px 2px grey;
+  cursor: pointer;
+}
+
+.filterSubmit{
+  margin-left: 6vw;
+  position: absolute;
+}
+
+.goToCases{
+  width: 12vw;
+}
+
+.myButton{
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yes{
+  margin-top: 14vh;
+  margin-left: 27vw;
+
+}
+
+
+.mytasks{
+  width: 25vw;
+  margin: auto;
+  height: 44vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: normal;
+  box-sizing: border-box;
+}
+ 
+.mytasks::-webkit-scrollbar {
+  width: 1vw;
+  height: 2vh;
+}
+
+.mytasks::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+  border-radius: 20px;
+}
+
+.mytasks::-webkit-scrollbar-thumb {
+  background-color: #283745;
+  border-radius: 40px;
+  border: 4px solid rgba(0,0,0,0);
+  background-clip: content-box;
+  min-width: 3.284072249589491vh;
+  min-height: 1.6220600162206003vw;
+}
+
+.mytasks:-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0);
+  border-radius: 40px;
+} 
+
+.DisplayPcpt{
+  display: inline-block;
+  position: absolute;
+  margin-top: -7px;
+  width: 26.041666666666668vw;
+  height: 2vh;
+  z-index: 6;
+}
+
+.c1, .c2{
+  justify-content: center;
+  display: inline-block;
+  margin: 2.770083102493075vh 0.6510416666666666vw 0vh 0.6510416666666666vw;
+  margin-left: 20px;
+}
+
+.text1 {
+  font-size: 12px;
+  width: 26vw;
+  height: 5vh;
+  display: block;
+  padding: 1.6620498614958448vh 1.3020833333333333vw;
+  margin: 1.10803324099723vh 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+
+}
+/* description */
+.text2 { 
+  margin-top: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  resize: none;
+  font-size: 12px;
+  width: 26vw;
+  height: 13vh;
+  display: block;
+  padding: 1.6620498614958448vh 1.3020833333333333vw;
+  margin: 1.3850415512465375vh 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  margin-bottom: 7vh;
+
+}
+
+/* TRYYYY */
+.stepper{
+  position: absolute;
+  margin-top:24vh;
+  margin-left: 12vw;
+}
+
+/* ------------------------------------------------STEPPER */
+
+input[type="button"] {
+    margin-top: 1.3020833333333333vw;
+}
+.node {
+    height: 1.3850415512465375vh;
+    width: 0.6510416666666666vw;
+    border-radius: 50%;
+    display:inline-block;
+    transition: all 1000ms ease;
+}
+
+.activated {
+    box-shadow: 0px 0px 3px 2px rgba(0, 40, 55, 0.8);
+
+}
+
+.divider {
+
+    height: 100vh;
+    width: 0.13020833333333334vw;
+    margin-left: 0.2604166666666667vw;
+    transition: all 80ms ease;
+}
+
+li p {
+    display:inline-block;
+    margin-left: 1.6276041666666667vw;
+}
+
+li {
+    list-style: none;
+    line-height: 1px;
+}
+
+.green{
+  border: 2px solid #283745;
+}
+
+/* .green{ background-color: rgba(40, 55, 69, 1) }   */
+/* .green{ background-color: rgba(40, 55, 69, 1) }  */
+.grey { background-color: rgba(201, 201, 201, 1); }
+
+
+
+/* Step DIVS */
+
+.F1, .F2, .F3, .F4{
+  display: block;
+  position: absolute;
+  margin-top: -15vh;
+  
+}
+
+.Defendant{
+  color: black;
+  box-sizing: border-box;
+  width: 49%;
+  height: 61.5vh;
+  margin-left: -2.6vw;
+  margin-top: -3.3vh;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+
+
+}
+
+.Plaintiff{
+  color: white;
+  box-sizing: border-box;
+  width: 52%;
+  height: 61.85vh;
+  margin-right: -1.6vw;
+  margin-top: -3.3vh;
+  float: right;
+  border-radius: 0px 5px 5px 0px;
+  background-color:#283745;
+}
+
+.DefendantForm, .PlaintiffForm{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 32.5vw;
+
+}
+
+.subtaskHeading{
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 3vh;
+}
+
+
+/* --------------------------------------------------------- */
+
+.drag-area{
+  margin-top: 5vh;
+  margin-left: 0vw;
+  /* border: 2px dashed grey; */
+  width: 30vw;
+  height: 40vh;
+  border-radius: 5px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 2px solid #fff;
+}
+.drag-area .icon{
+  font-size: 75px;
+  color: #283745;
+}
+.drag-area header{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.drag-area span{
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  margin: 10px 0 15px 0;
+}
+/* #browse{
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  background: #5256af;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.drag-area img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 5px;
+}
+ .hrline{
+  margin:0.5em;
+  background-color: lightgray;
+  margin-left: 1.3020833333333333vw;
+ }
+
+ .buttons{
+  margin-top:2.770083102493075vh;
+  margin-left:13.020833333333334vw;
+ }
+
+ #searchByImage{
+  background-color: #006d5b;
+ }
+
+.horizontal_line{
+  margin-top: 2.0775623268698062vh;
+  margin-left: 11.71875vw;
+}
+
+.submit{
+  align-items: center;
+}
+
+#nextpg{
+  display: none;
+  margin-top: 52vh;
+  margin-left: 2vw;
+  border: none;
+  
+} 
+.choose_another_img{
+  align-items: center;
+  float: left;
+}
+ #chooseimg{
+  width: 15vw;
+  display: none;
+  margin-top: 52vh;
+  margin-left: 12vw;
+  border: none;
+  
+} 
+.close-btn{
+margin-right: 48.828125vw;
+background-color: lightgray;
+border-radius: 50px;
+border:transparent;
+position: absolute;
+}
+
+#btn{
+display: none;
+border: transparent;
+width:2.6041666666666665vw;
+height:5.54016620498615vh;
+position: absolute;
+border-radius: 50px;
+}
+
+.imageShow{
+  position: absolute;
+  border: 2px dashed grey;
+  height: 40vh;
+  width: 30vw;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+/* -------------------------------------------------------------- */
+
+
+.fileSelect{
+
+  font-size: 12px;
+  width: 30vw;
+  height: 5vh;
+  display: block;
+  padding:  1.6620498614958448vh 1.3020833333333333vw;
+  margin: 1.10803324099723vh 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+
+}
+
+
+/* .popup, .popupSelect{
+
+  font-size: 12px;
+  width: 26vw;
+  height: 5vh;
+  display: block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
+} */
+
+
+/* SUBTASK FORM */
+
+
+.subtaskForm{
+
+  visibility: hidden;
+  text-align: left;
+  color: #4B4A48;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -41.551246537396125vh;
+  margin-left: -16.276041666666668vw;
+  padding: 3.4626038781163433vh 1.6276041666666667vw 3.4626038781163433vh 1.6276041666666667vw;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 13px;
+  font-weight: 400;
+  width: 26.041666666666668vw;
+  height: 62.32686980609418vh;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.successfulSubmit{
+
+  visibility: hidden;
+  color: #4B4A48;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 290vh;
+  margin-left: -14.322916666666666vw;
+  padding: 3.4626038781163433vh 1.6276041666666667vw 3.4626038781163433vh 1.6276041666666667vw;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 13px;
+  font-weight: 400;
+  width: 27.34375vw;
+  height: 41.551246537396125vh;
+  font-weight: 500;
+  z-index: 10;
+  text-align: center;
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+  
+}
+.disclaimer{
+  visibility: hidden;
+  color: #4B4A48;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25vh;
+  margin-left: -16vw;
+  padding: 3.4626038781163433vh 1.6276041666666667vw 3.4626038781163433vh 1.6276041666666667vw;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px grey;
+  font-size: 13px;
+  font-weight: 400;
+  width: 30.34375vw;
+  height: 41.551246537396125vh;
+  font-weight: 500;
+  z-index: 10;
+  text-align: center;
+  animation: fadein 1s;
+
+}
+
+.disclaimerHeader{
+  color: #4B4A48;
+  font-size: 19px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disclaimerWord{
+  margin-top: 5vh;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.lawflowIcon{
+  padding-right: 0.6510416666666666vw;
+  text-align: center;
+  width: 3vw;
+  height: auto;
+}
+
+.gif{
+  margin-top: -3vh;
+  height: 27.700831024930746vh;
+  width: auto;
+}
+
+.full{
+  visibility: hidden;
+  position: fixed;
+  background-color: #555;
+  opacity: 0.7;
+  height: 350vh;
+  width: 100vw;
+  z-index: 9;
+}
+
+.cross{
+  float:right;
+}
+
+.cross:hover{
+  background-image: url("../assets/delRed.png");
+  cursor: pointer;
+
+}
+
+#browse{
+  margin-top: 26vh;
+  display: block;
+}
+
+.clientSubmit{
+  margin-top: 60vh;
+  margin-left: -1vh;
+}
+
+.stepButton1{
+
+  width: 200px;
+  position: absolute;
+  margin-left:980px;
+  margin-top: 50vh;
+  color: grey;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+
+}
+
+.finalSubmit{
+
+  margin-top: -37vh;
+  margin-left: 29vw;
+
+}
+
+
+
+/* ---------------------------------------- */
+
+
+
+
+.invis1{
+
+  position: absolute;
+  width: 3.2552083333333335vw;
+  height: 6.925207756232687vh;
+  /* border: 5px solid black; */
+  margin-left: 60vw;
+  margin-top: -35vh;
+  z-index: 100;
+  transition: top 0.2s linear;
+
+}
+
+
+.invis2{
+
+  position: absolute;
+  width: 3.2552083333333335vw;
+  height: 6.925207756232687vh;
+  /* border: 5px solid black; */
+  margin-left: 60vw;
+  margin-top: -80vh;
+  z-index: 100;
+  transition: top 0.2s linear;
+
+}
+
+.invis3{
+
+  position: absolute;
+  width: 3.2552083333333335vw;
+  height: 6.925207756232687vh;
+  /* border: 5px solid black; */
+  margin-left: 80vw;
+  margin-top: 313vh;
+  z-index: 100;
+  transition: top 0.2s linear;
+
+}
+
+#clientEmail{
+  width:25.5vw;
+  height:6vh;
+  border-radius: 5px;
+  border:1px solid grey;
+}
+
+#clientDob{
+
+  width:25.5vw;
+  height:6vh;
+  border-radius: 5px;
+  border:1px solid grey;
+
+}
+
+
+#client_details{
+  visibility: hidden;
+  height:68vh;
+  width:33vw;
+  border:1px solid grey;
+  border-radius: 5px;
+  background-color:white;
+  margin-top: 20vh;
+  z-index: 100;
+  margin-left:35vw;
+  position:absolute;
+}
+
+.closeFSclient{
+  margin-left:30vw;
+  margin-top: -55vh;
+  position: absolute;
+}
+
+
+
+
+#cover-spin {
+  position:fixed;
+  width:100%;
+  left:0;right:0;top:0;bottom:0;
+  background-color: rgba(255,255,255,0.7);
+  z-index:9999;
+  display:none;
+}
+
+@-webkit-keyframes spin {
+from {-webkit-transform:rotate(0deg);}
+to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+  content:'';
+  display:block;
+  position:absolute;
+  left:48%;top:40%;
+  width:40px;height:40px;
+  border-style:solid;
+  border-color:black;
+  border-top-color:transparent;
+  border-width: 4px;
+  border-radius:50%;
+  -webkit-animation: spin .8s linear infinite;
+  animation: spin .8s linear infinite;
+}

@@ -1,0 +1,240 @@
+body{
+    background-color:#F9F6F0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    margin: 0;
+    width: 100vw;
+    height: 100vh; 
+    background-image: url('assets/bg.png');
+    background-repeat: repeat;
+    background-size: 100% 100%;  
+  }
+
+  .greenbar{
+
+    position:fixed;
+    background-color: #283745;
+    margin-top: 0;
+    height: 100vh;
+    width: 11.7vw;
+    z-index: 2;
+  }
+
+.topbar{
+  color: #4B4A48;
+  position: fixed;
+  background-color:#C1B189;
+  position:fixed;
+  width: 100vw;
+  height: 11vh;
+  margin-left: 11.7vw;
+  text-indent: 1em;
+  z-index: 2;
+}
+
+.lawflow{
+    position:fixed;
+    color:rgb(255, 255, 255);
+    margin-left: 5vw;
+    top: 1.5vw;
+    font-size: 15px;
+    z-index: 3;
+  }
+
+.smallLogo{
+    height: 6vh; 
+    width: auto; 
+    margin-left: 1.5vw;
+    margin-top: 3vh;
+    z-index: 3;
+  }
+
+.dp{
+  height: 6vh; 
+  width: auto; 
+  margin-top: 3vh;
+  margin-left: 2vw;
+  border-radius: 50%;
+  float: left;
+  z-index: 3;
+  }
+
+.iconDashboard{
+  position:relative;
+  height: 4vh; 
+  width: auto; 
+  top: 0.5vh;
+  right: 1vw;
+  margin-left: 3vw;
+  float: left;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+.dashboard{
+
+  width: 12.1vw;
+  height: 7vh;
+  padding-top: 2vh;
+  position:fixed;
+  color:white;
+  left: -1vh;
+  margin-top: 13vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  cursor: pointer;
+  
+  }
+
+/* .iconSearch{
+  position:relative;
+  height: 4vh; 
+  width: auto; 
+  top: 0.5vh;
+  right: 1vw;
+  margin-left: 3vw;
+  float: left;
+  z-index: 3;
+  cursor: pointer;
+  }
+  
+.search{
+  width: 12.1vw;
+  height: 7vh;
+  padding-top: 2vh;
+  position:fixed;
+  color:white;
+  left: -1vh;
+  margin-top: 22vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  cursor: pointer;
+  } */
+
+.iconCases{
+  position:relative;
+  height: 4vh; 
+  width: auto; 
+  top: 0.5vh;
+  right: 1vw;
+  margin-left: 3vw;
+  float: left;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+.cases{
+  width: 12.1vw;
+  height: 7vh;
+  padding-top: 2vh;
+  position:fixed;
+  color:white;
+  left: -1vh;
+  margin-top: 22vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+
+.iconCalendar{
+  position:relative;
+  height: 4vh; 
+  width: auto; 
+  top: 0.5vh;
+  right: 1vw;
+  margin-left: 3vw;
+  float: left;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+.calendar{
+  width: 12.1vw;
+  height: 7vh;
+  padding-top: 2vh;
+  position:fixed;
+  color:white;
+  left: -1vh;
+  margin-top: 31vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+.iconTodo{
+  position:relative;
+  height: 4vh; 
+  width: auto; 
+  top: 0.5vh;
+  right: 1vw;
+  margin-left: 3vw;
+  float: left;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+.todo{
+  width: 12.1vw;
+  height: 7vh;
+  padding-top: 2vh;
+  position:fixed;
+  color:white;
+  left: -1vh;
+  margin-top: 40vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+.iconSetting{
+  position:relative;
+  height: 4vh; 
+  width: auto; 
+  top: 0.5vh;
+  right: 1vw;
+  margin-left: 3vw;
+  float: left;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+.setting{
+  width: 12.1vw;
+  height: 7vh;
+  padding-top: 2vh;
+  position:fixed;
+  color:white;
+  left: -1vh;
+  margin-top: 49vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  cursor: pointer;
+  }
+
+
+.calendar:hover, .search:hover, .cases:hover, .contacts:hover,.dashboard:hover, .todo:hover,.setting:hover{
+  border: 1px solid #283745;
+  background-color: rgba(76, 104, 131, 0.9);
+  opacity: 0.7;
+  
+
+}
+
+.title{
+  position: fixed;
+  color: #4B4A48;
+  margin-left: 15vw;
+  margin-top: 13vh;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 3;
+  }
+
+
+

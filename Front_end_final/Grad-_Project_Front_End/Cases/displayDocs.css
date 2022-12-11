@@ -1,0 +1,567 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.title{
+    position: absolute;
+    color: #4B4A48;
+    margin-left: 3.3vw;
+    margin-top: 2vh;
+    font-size: 13px;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 13.5vh;
+    margin-left: 11.7vw;
+    margin-top: 11vh;
+    float: left;
+    z-index: 2;
+    background-color: #F9F6F0;
+}
+
+.h2{
+    display: inline;
+    color: grey;
+    font-weight: 400;
+}
+ 
+.backLink{
+    margin-top: 10.6vh;
+    margin-left: 1vw;
+    width: 1.2vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.filetop{
+    border: 1px solid lightgrey;
+    position: absolute;
+    height:9vh;
+    width: 82vw;
+    margin-left: 15vw;
+    background-color: white;
+    margin-top: 15vh;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.fileSearch{
+    border-bottom: 1px solid lightgrey;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+    height:7vh;
+
+    background-color: white;
+    margin-top: 25vh;
+    width: 82vw;
+    margin-left: 15vw;
+
+}
+
+.filebase{
+    position: absolute;
+    height:72vh;
+    border: 1px solid lightgrey;
+    background-color: white;
+    margin-top: 25vh;
+    border-radius: 0px 0px 5px 5px;
+    width: 82vw;
+    margin-left: 15vw;
+
+}
+
+.displayCategories{
+    /* border: 2px solid purple; */
+    /* display: inline-block; */
+    position: absolute;
+    margin-top: 6vh;
+    height:49vh;
+    background-color: transparent;
+    border-radius: 0px 0px 5px 5px;
+    width: 81.9vw;
+    overflow-y: auto;
+}
+
+
+.icon{
+    position: absolute;
+    margin-top: 1vh;
+
+}
+
+.caseIcon{
+    width: 2vw;
+    margin-top: 1.2vh;
+    margin-left: 3vh;
+}
+
+.inputSearch{
+    display: inline;
+    margin-top: -2vh;
+    margin-left: 2vw;
+}
+
+.enterFilename{
+    position: absolute;
+    border: none;
+    width: 70vw;
+    margin-top: -0.5vh;
+    margin-left: -3.5vw;
+    padding-left: 3.5vw;
+    height: 5.5vh;
+    background-color: transparent;
+}
+
+.searchFilename{
+    font-size: 13px;
+    position: absolute;
+    margin-left: 145vh;
+    width: 3.5vw;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    margin-top:1vh;
+    cursor: pointer;
+
+}
+
+.searchFilename:hover{
+    text-decoration: underline;
+}
+
+.DocViewer{
+    height:58vh;
+    width: 60vw;
+    margin: 30px 20px 20px 20px;
+    overflow: auto;
+    display: inline-block;
+}
+
+.docSummary{
+    position: fixed;
+    
+    border-left-color: lightgrey;
+    border-left-width: 1px;
+    border-left-style: solid;
+    height:64vh;
+    width: 19vw;
+    margin: 0px 20px 20px 20px;
+    margin-left: -20px;
+    padding-left: 10px;
+    padding-bottom: 2vh;
+    overflow: auto;
+    display: inline-block;
+
+}
+
+.SumHeading{
+    text-align: center;
+    color: #4B4A48;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.backLink{
+  position: absolute;
+  margin-top: 21.5vh;
+  margin-left: 12.7vw;
+  width: 1.2vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.gavelIconPic{
+    width: 2vw;
+    height: auto;
+    margin-top: 2.5vh;
+    margin-left: 2vh;
+}
+
+.gavelIcon{
+    display: inline;   
+}
+
+.casename{
+    color: #4B4A48;
+    font-size: 24px;
+    display: inline-block;
+    width: auto;
+    margin-top: 2.5vh;
+}
+
+.HeaderDisplay{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    margin-left: 1vw;
+}
+
+.caseid{
+    font-style: italic;
+    color: grey;
+    font-size: 13px;
+    width: auto;
+    display: inline;
+    margin-left: 1vw;
+    margin-top: 1vh;
+
+}
+
+.addFiles, .deleteImg{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 8vw;
+    height: 4vh;
+    position: absolute;
+    background-color: #283745;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 0px;
+    outline: none;
+
+
+}
+
+.addFiles{
+    margin-top: 1vh;
+    margin-left: 5.5vw;
+}
+
+/* .deleteImg{
+    visibility: hidden;
+    margin-left: 11vw;
+    margin-top: 1vh;
+} */
+
+.trash{
+    width: 1.3vw;
+    height: auto;
+    display: inline-block;
+    margin-top: 1.3vh;
+}
+
+.deleteFile{
+    visibility: hidden;
+    width: 4vw;
+    height: 5vh;
+    margin-top: -0.5vh;
+    text-align: center;
+    float: right;
+}
+
+
+.openFile{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50vh;
+    width: 8vw;
+    padding: 1.3850415512465375vh 0.9765625vw 1.3850415512465375vh 0.9765625vw;
+    position: fixed;
+    background-color: #283745;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 0px;
+    outline: none;
+    margin-left: 5.5vw;
+
+}
+
+.translation{
+    margin-top: -4vh;
+}
+
+.openFile:hover{
+    background-color: #C1B189;
+    box-shadow: 2px 2px grey;
+    cursor: pointer;
+}
+
+
+
+
+
+.viewerHeader{
+    /* border:1px solid black; */
+    height: 6vh;
+    color: #4B4A48;
+    border-bottom: lightgray;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.buttons{
+
+    float: right;
+    /* border:1px solid black; */
+    height: 100%;
+    width: 20vw;
+
+}
+
+.img{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block; /* remove extra space below image */
+}
+
+
+.sort{
+    position: absolute;
+    margin-left: 1.5vw;
+    margin-top: 1.4vh;
+    height: 3.5vh;
+    width: 2vw;
+    text-align: center;
+}
+
+.sort:hover{
+    background-color: #F5F5F5;
+    height: 3.5vh;
+    width: 2vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.catPlaceholder{
+    margin-left: -5vw;
+}
+
+.headingCat2{
+    position: absolute;
+    /* border:1px solid black; */
+    height: 2vh;
+    width: 41.45vw;
+    margin-left: 20vw;
+    text-align: center;
+
+}
+
+.myHeading{
+    /* border: 1px solid black; */
+    width: 5vw;
+    display: inline-block;
+    margin-left: 2vw;
+}
+
+
+
+
+/* #translate:hover{
+    background-color: #C1B189;
+} */
+/* ----------------------------------------------------------- */
+
+
+
+/* .dropbtn {
+  color: white;
+  padding: 1vh;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+
+  border: none;
+  cursor: pointer;
+} */
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: F5F5F5;
+}
+
+.dropdown {
+  margin-top: 1.3vh;
+  margin-left: 1vw;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    color: white;
+    padding: 1vh;
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+  
+    border: none;
+    cursor: pointer;
+  }
+
+.dropdown-menu{
+    display: none;
+}
+.show {display: block;}
+
+
+.dropdown-content {
+  /* visibility: hidden; */
+  display: none;
+  position: absolute;
+  background-color: white;
+  font-size: 14px;
+  min-width: 12vw;
+  height: 25vh;
+  overflow: auto;
+  border: 1px solid lightgrey;
+  z-index: 1;
+}
+
+.dropdown-content p {
+
+  color: #4B4A48;
+  padding: 1.5vh 1.5vw;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown p:hover {background-color: #F5F5F5;}
+
+.show {display: block;}
+
+.submitSort{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2vh;
+    width: 5vw;
+    padding: 0.5vh;
+    position: absolute;
+    background-color: #283745;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+    margin-left: 3.2vw;
+    border-radius: 50px;
+    border: 0px;
+    outline: none;
+}
+
+.submitSort:hover{
+    background-color: #C1B189;
+    box-shadow: 2px 2px grey;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+.container {
+
+    color: grey;
+    display: block;
+    position: relative;
+    padding-left: 1.5vw;
+    margin: 1rem;
+    cursor: pointer;
+    user-select: none;
+    font-size: 13px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2vh;
+    width: 1vw;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #283745;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 0.7vh;
+    left: 0.35vw;
+    width: 0.6vh;
+    height: 0.3vw;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  .filterDate{
+    width: 17vw;
+  }
+  /* --------------------------------------- */
+  
+  
+  
+#translate{
+    visibility: hidden;
+    position: absolute;
+    top: 48vh;
+    left:6.1vw;
+    background-color: #283745;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 50vh;
+    height: 4.5vh;
+    cursor: pointer;
+    width: 8vw;
+    padding: 1.3850415512465375vh 0.9765625vw 1.3850415512465375vh 0.9765625vw;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 0px;
+    outline: none;
+
+    
+}
+
+#translate:hover{
+    background-color: #C1B189;
+}

@@ -1,0 +1,292 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.title{
+    position: absolute;
+    color: #4B4A48;
+    margin-left: 3.3vw;
+    margin-top: 2vh;
+    font-size: 13px;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 13.5vh;
+    margin-left: 11.7vw;
+    margin-top: 11vh;
+    float: left;
+    z-index: 2;
+    background-color: #F9F6F0;
+}
+
+.h2{
+    display: inline;
+    color: grey;
+    font-weight: 400;
+}
+ 
+.backLink{
+    margin-top: 10.6vh;
+    margin-left: 1vw;
+    width: 1.2vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.filetop{
+    border: 1px solid grey;
+    position: absolute;
+    height:9vh;
+    width: 82vw;
+    margin-left: 15vw;
+    background-color: white;
+    margin-top: 26vh;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.fileSearch{
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+    height:7vh;
+    margin-top: 36vh;
+    width: 82vw;
+    margin-left: 15vw;
+    background-color: white;
+
+}
+
+.filebase{
+    position: absolute;
+    height:54vh;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 43vh;
+    border-radius: 0px 0px 5px 5px;
+    width: 82vw;
+    margin-left: 15vw;
+
+}
+
+.displayCategories{
+    /* border: 2px solid purple; */
+    /* display: inline-block; */
+    position: absolute;
+    margin-top: 6vh;
+    height:49vh;
+    background-color: transparent;
+    border-radius: 0px 0px 5px 5px;
+    width: 81.9vw;
+    overflow-y: auto;
+}
+
+.generalDocuments{
+    margin-left: 1vw;
+    border: 1px solid grey;
+    position: absolute;
+    height:7vh;
+    width: 79.5vw;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.icon{
+    margin-top: 1vh;
+    display: inline-block;
+}
+
+.caseIcon{
+    position: absolute;
+    width: 2vw;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+}
+
+
+.enterFilename{
+    position: absolute;
+    border: 1px solid black;
+    border: none;
+    width: 85vw;
+    margin-top: -2vh;
+    margin-left: -3.5vw;
+    padding-left: 3.5vw;
+    height: 5.5vh;
+    background-color: transparent;
+}
+
+.gavelIconPic{
+    width: 2vw;
+    height: auto;
+    margin-top: 2.5vh;
+    margin-left: 2vh;
+}
+
+.gavelIcon{
+    display: inline;
+    
+}
+
+
+
+
+.inputSearch{
+    position: absolute;
+    display: inline;
+    margin-top: -2vh;
+    margin-left: 2vw;
+}
+
+.enterFilename{
+    border: 1px solid black;
+    position: absolute;
+    border: none;
+    width: 70vw;
+    margin-top: 1.5vh;
+    margin-left: -4vw;
+    padding-left: 3.5vw;
+    height: 5.5vh;
+    background-color: transparent;
+}
+
+.searchFilename{
+    font-size: 13px;
+    position: absolute;
+    margin-left: 140vh;
+    width: 3.5vw;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    margin-top:3vh;
+    cursor: pointer;
+
+}
+
+.searchFilename:hover{
+    text-decoration: underline;
+}
+
+.casename{
+    color: #4B4A48;
+    font-size: 24px;
+    display: inline-block;
+    width: auto;
+    margin-top: 2.5vh;
+}
+
+.HeaderDisplay{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    margin-left: 1vw;
+}
+
+.caseid{
+    font-style: italic;
+    color: grey;
+    font-size: 13px;
+    width: auto;
+    display: inline;
+    margin-left: 1vw;
+    margin-top: 1vh;
+
+}
+
+.categoryName, .categoryModified, .categorySize{
+    display: inline-block;
+    height: 55vh;
+    /* border: 1px solid black; */
+}
+
+.categoryName{
+    width: 41vw;
+}
+
+.categoryModified{
+    width: 20vw;
+}
+
+.categorySize{
+    width: 20vw;
+}
+
+.boxHeading{
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+.boxHeadingCat{
+    text-align: left;
+    margin-left: 5vw;
+    color: gray;
+    font-weight: 300;
+    font-size: 15px;
+    
+}
+
+.results{
+    visibility: hidden;
+    position: absolute;
+    border:1px solid grey;
+    margin-top: 7.4vh;
+    margin-left: -5.1vw;
+    z-index: 4000;
+    background-color: white;
+    height:40vh;
+    width: 82vw;
+    box-shadow: 1px 1px grey;
+
+}
+
+
+
+/* .results:{
+    height:40vh;
+
+} */
+
+.resultHeader{
+    margin-left: 4vh;
+    color: grey;
+}
+
+.viewer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+    overflow: auto;
+
+}
+
+.closeWindow{
+    float: right;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+#addfiles{
+    margin-top: -3vh;
+    margin-left: 76vw;
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: #283745;
+    color: white;
+    height:5vh;
+    width:6vw;
+    cursor:pointer;
+}
+
+#addfiles:hover{
+    background-color: #C1B189;
+}

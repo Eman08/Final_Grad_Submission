@@ -1,0 +1,160 @@
+.sidenav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top:11%;  
+  left: 20.775623268698062vh;
+  background-color:#283745 ; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#283745, #283745);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 13.864818024263432vh;
+
+}
+
+
+
+.sidenav p {
+  padding: 0px 0.5208333333333334vw 1.10803324099723vh 2.0833333333333335vw;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  right: 0px;
+  
+}
+
+.sidenav a {
+  padding: 10px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  right: 0px;
+  
+}
+
+.sidenav a:hover {
+  color: #283745;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1.953125vw;
+  font-size: 36px;
+  margin-left: 3.90625vw;
+}
+
+
+@media screen and (max-height: 77.98960138648181vh) {
+  .sidenav {padding-top: 2.5996533795493932vh;}
+  .sidenav a {font-size: 18px;}
+}
+
+.containerSearch {
+  color: white;
+  display: block;
+  position: relative;
+  padding-left: 3.125vw;
+  margin-bottom: 2.079722703639515vh;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerSearch input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkS {
+  position: absolute;
+  top: 0;
+  left: 0.078125vw;
+  height: 2.946273830155979vh;
+  width: 1.328125vw;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerSearch:hover input ~ .checkmarkS {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerSearch input:checked ~ .checkmarkS {
+  background-color:  #C1B189;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkS:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerSearch input:checked ~ .checkmarkS:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerSearch .checkmarkS:after {
+ 	top: 1.2131715771230502vh;
+	left: 0.546875vw;
+	width: 0.625vw;
+	height: 1.3864818024263432vh;
+	border-radius: 50%;
+	background: #C1B189;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+div.example input[type=text] {
+  padding-left: 3.2552083333333335vw;
+  margin-left: 0.9765625vw;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #f1f1f1;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+div.example button {
+  float: left;
+  width: 13%;
+  padding: 5px;
+  background: #C1B189 ;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #C1B189;
+  border-left: none;
+  cursor: pointer;
+}
+
+div.example button:hover {
+  background: #283745 ;
+}
+
+div.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}

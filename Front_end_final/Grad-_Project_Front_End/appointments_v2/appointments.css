@@ -1,0 +1,346 @@
+/*
+.greenbar{
+    background-color: #283745;
+    position:absolute;
+    height: 140%;
+    width: 180px;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    position: absolute;
+ }
+ */
+
+
+ /* body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Segoe UI';
+ } */
+
+ /* div{
+  width: 100vw;
+  height: 100vh;
+ } */
+
+/* .greenbar{
+  background-color: #283745;
+  position:absolute;
+  
+  height: 100vh;
+  width: 13.177159590043924vw ;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  position: fixed;
+}
+
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+} */
+body{
+  overflow: hidden;
+}
+
+html {
+  font-size: 58.5%;
+} 
+
+.container1 {
+  border:1px solid transparent;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  color: #283745;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 50px;
+
+
+  
+}
+
+.calendarM {
+  margin-left: 10.9375vw;
+  margin-top:22.530329289428078vh;
+  width: 45rem;
+  height: 52rem;
+  background-color:#ffffff ;
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  
+  background-color:#ffffff ;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+ 
+  border: 0.2rem solid#283745;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.currentday {
+ 
+  background-color:#283745 ;
+  color: #ffffff;
+
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #283745;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 453px;
+  right: 378px;
+  width: 180px;
+}
+  
+  /* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right:255px;
+    border: 3px solid #EFEFEF ;   
+    flex-flow: row wrap;
+    align-items: left;
+    border-radius: 2%;
+    box-shadow:10cm;
+    background-color: #F5F5F5;
+    z-index: 1;
+    font-family: 'Segoe UI';
+ }
+    
+  
+  
+  /* Add styles to the form container */
+  .form-container {
+    margin: 20px 10px 5px 0;
+    max-width: 400px;
+    padding: 10px;
+    
+   
+  }
+
+  
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=date], .form-container input[type=time]{
+    width: 35%;
+    padding: 8px;
+    margin: 8px 0 22px 0;
+    border: none;
+    background-color: #CBDDC5;
+    border-radius: 8px;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=date]:focus, .form-container input[type=time]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #283745;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    border-radius: 6%;
+    opacity: 0.8;
+  }
+  
+
+  .form-container .cancel {
+    background-color:white;
+    border-radius: 6%;
+    color:#283745
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+
+.eventDirectory{
+  margin-left:200px;
+  margin-top:-80px;
+  color: #283745;
+  font-size:20px;
+  position: absolute;
+  bottom: 393px;
+  right:400px;
+  z-index: -1;
+  
+}
+#scroller{
+  scroll-behavior: smooth;
+}
+#scroller::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+#scroller::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+#scroller::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+div.scroll {
+    
+
+    margin:4px, 4px;
+    padding:4px;
+    width: 505px;
+    height: 300px;
+    margin-top: 80px;
+    text-align: center;
+    color: black;
+    text-align:justify;
+    position: fixed;
+    bottom: 80px;
+    right:55px;
+    border-radius: 3%;
+}
+  .line {
+    width: 2px;
+    background-color: lightgrey !important;
+  }
+  .lead {
+    font-size: 1.1rem;
+  }
+
+
+.appointments{
+  padding-bottom:30px;
+}
+
+.vl {
+  border-left: 3px solid lightgray ;
+  height: 75.33333333333333vh;
+  margin-top: 22.666666666666668vh;
+  margin-left:51.904831625183014vw;
+  position: absolute;
+}
+#cover-spin {
+  position:fixed;
+  width:100%;
+  left:0;right:0;top:0;bottom:0;
+  background-color: rgba(255,255,255,0.7);
+  z-index:9999;
+  display:none;
+}
+
+@-webkit-keyframes spin {
+from {-webkit-transform:rotate(0deg);}
+to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+  content:'';
+  display:block;
+  position:absolute;
+  left:48%;top:40%;
+  width:40px;height:40px;
+  border-style:solid;
+  border-color:black;
+  border-top-color:transparent;
+  border-width: 4px;
+  border-radius:50%;
+  -webkit-animation: spin .8s linear infinite;
+  animation: spin .8s linear infinite;
+}

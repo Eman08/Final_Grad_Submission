@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    <link href="signup2.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <script src="signup2-JS.js" type="module" > 
+    
+    </script>
+   
+      </script>
+    
+    <title>SignUP</title>
+  </head>
+  <body>
+    <div style="display:block; width:100%;">
+    <div class = "dividePage">
+    <div class="login">
+    <img src="../assets/lawflow.png" id="logo"> 
+    </div>
+    <p id="title" class="name">LawFlow</p>
+    </div>
+    <span class = "verticality"></span>
+    <div class="loader" id = "loader">Loading...</div>
+    <div class = "dividePage2">
+      <form>
+        <div class="profile-pic-div">
+          <img src="../assets/image.jpg" id="photo">
+          <input type="file" name="file" id="file" accept="image/jpeg"/>
+          <label for="file" id="uploadBtn">Choose Photo</label>
+        </div>
+        <br><br>
+        <input type="date" id="DOB" placeholder="Date Of Birth">
+        <span id="span_login_invalid"></span>
+        <br><br>
+    </form> 
+    <button class="sign-submit" id="sign-submit"> Sign Up </button>
+  </div>
+  </div>
+  </body> 
+</html>
+
+

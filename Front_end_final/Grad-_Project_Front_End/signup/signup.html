@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    <link href="signup.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <script src="signup.js" type="module" > 
+    
+    </script>
+    <!-- <script type = "text/javascript" >
+      function myfunction(){
+      alert("I reach here");
+  } -->
+      </script>
+    
+    <title>LawFlow</title>
+  </head>
+  <body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<div class = "form">
+			<h1>Create Account</h1>
+			<div class="social-container">
+        <a href="#" class="social"><div class="profile-pic-div">
+          <img src="../assets/image.jpg" id="photo">
+          <input type="file" name="file" id="file" accept="image/jpeg"/>
+          <label for="file" id="uploadBtn">Choose Profile</label>
+        </div></a>
+			</div>
+			<input type="text" placeholder="Username" id="username" />
+			<input type="text" placeholder="First Name" id="fname" />
+			<input type="text" placeholder="Last Name" id="lname" />
+			<input type="email" placeholder="Email" id="email" />
+			<input type="password" placeholder="Password" id="password" />
+      		<input placeholder = "Date of Birth" id = "DOB" class = "textbox-n" type = "text" onfocus = "(this.type = 'date')"  id = "date">
+			<button id="signup">Sign Up</button>
+      		<p class="error3"></p>
+		</div>
+	</div>
+	<div id="cover-spin"></div>
+	<div class="form-container sign-in-container">
+		<div class = "form">
+			<h1>Sign in</h1>
+			<div class="social-container">
+			</div>
+			<input type="text" placeholder="Username" id="username_Login" />
+			<input type="password" placeholder="Password" id="password_Login" />
+			<a href="#">Forgot your password?</a>
+			<button id = "SIGNIN">Sign In</button>
+      		<p class="error2"></p>
+		</div>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+        <img src="../assets/lawflow.png" height = "100px" width = "100px">
+				<h2>Welcome Back to Lawflow!</h2>
+				<p>To keep using the app please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+        <img src="../assets/lawflow.png" height = "100px" width = "100px">
+				<h2>Welcome to LawFlow!</h2>
+				<p>Enter your personal details and start your legal journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+  </body> 
+</html>
+

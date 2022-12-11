@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
+
+    <link href="../generic.css" rel="stylesheet">
+    <link href="cases.css" rel="stylesheet">
+    <!-- <link href="../searchBar/search.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <script type="module" src="cases2.js" > </script>
+    <script type="module" src="check.js" > </script>
+    <script type="module" src="search.js" > </script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  
+
+    
+    <title>Cases</title>
+  </head>
+  <body id="makeCases">
+
+    <div id="full" class="full">
+
+    </div>
+
+    <div id="disclaimer" class="disclaimer">
+      <a href="../Cases/cases.html"><img id="closeWindow" class="closeWindow" src="../assets/del.png"></a>
+      
+
+      <div class ="disclaimerHeader">
+        <img class ="lawflowIcon" src="../assets/lawflow.png">
+        <p>LAWFLOW</p>
+
+      </div>
+      <div class="holder">
+
+        <h3 class="disclaimerWord">IMPORTANT INFORMATION</h3>
+        <p>Please ensure the entered details are correct before proceeding to the next step of the process. Once moved to the next step, you will not be able to go back to the previous step.</p>
+
+      </div>
+
+      <button type="reset" id="accept" class="accept"> Accept and Continue</button>
+      
+
+    </div>
+    
+    <div class="greenbar">
+      <img class="smallLogo" src="../assets/lawflow.png" >
+    </div>
+
+    <div class="topbar"> 
+      <h1 margin-left="0px" id="heading_main"></h1>
+    </div>
+
+
+    <div class="lawflow">
+      <p>LAWFLOW</p>
+    </div>
+
+  <div class="dashboard" onclick="location.href='../dashboard/dashboard_1.html'"> <img class="iconDashboard" src="../assets/dashboard.png" >
+    <p>My Dashboard</p>
+  </div>
+
+  <div class="search" title="Search is unavailable on this page"> <img class="iconSearch" src="../assets/search.png" >
+    <p>Search</p>
+  </div>
+
+  <div class="cases" onclick="location.href='../Cases/cases.html'"> <img class="iconCases" src="../assets/gavel.png" >
+    <p>Cases</p>
+  </div>
+
+
+  <div class="calendar" onclick="location.href='../appointments_v2/appointments.html'"> <img class="iconCalendar" src="../assets/calendar.png" >
+    <p>Calendar</p>
+  </div>
+
+  <div class="todo" onclick="location.href='../to_do_lists/todolist.html'"> <img class="iconTodo" src="../assets/todo.png" >
+    <p>To-Do List</p>
+  </div>
+
+
+  <div class="setting" onclick="location.href='../Settings/setting.html'"> <img class="iconSetting" src="../assets/settings.png" >
+    <p>Settings</p>
+  </div>
+
+
+<!-- ------------------------------------------------------------------------------------------ -->
+
+
+<div class="header">
+  <div class="title">
+    <h1>Cases</h1>
+    <h2 class="h2">Create new case</h2>
+  </div>
+  <a href="../Cases/cases.html"><img src="../assets/back.png" class="backLink"></a>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------ -->
+
+<!-- <div id="invis1" class="invis1">
+
+</div> -->
+
+<!-- <div id="invis2" class="invis2">
+
+</div> -->
+
+<div id="invis3" class="invis3">
+
+</div> 
+
+
+
+
+
+<div class="stepper">
+
+    <ul id="progress">
+        <li><div class="node green"></div>
+            <p>Step 1: Case Details</p></li>
+
+            <div class = "F1">              
+              <div class="caseform1">
+                <form>
+
+                <div class="c1">
+                <label for="cname">Case Name</label>
+                <input type="text" id="cname" name="cname">
+
+                <label for="lawyers">Case Type</label>
+                <select id="selectCaseType" class = "myselect">
+                <option value="0">Select</option>
+                <option value="1">Civil</option>
+                <option value="2">Criminal</option>
+                <option value="3">Family</option>
+                </select>
+
+              </div>
+
+              <div class="c2">
+
+                <label for="lawyers">Court Type</label>
+                <select id="selectCourtType" class = "myselect">
+                <option value="0">Select</option>
+                <option value="1">Court of Appeal</option>
+                <option value="2">Federal Supreme Court</option>
+                <option value="3">Court of First Instance</option>
+                </select>
+
+                <div> 
+                  <label for="lawyers">Add Participants</label> <img src="../assets/help.png" class="tooltip" id="help" title="Enter participants' username registered on the application. You can add as many participants as you like and click on the 'Add' button to add them to the case.">               
+                </div>
+                
+                <input type="text" id="lawyers" name="lawyers">
+                <button type="button" id="addPcpt" class="addPcpt">Add</button>
+
+                <div class="DisplayPcpt" id="DisplayPcpt">
+
+                </div>
+              </div>
+
+                <div class="sum">
+                <label  class="descp" for="desc">Description</label>
+                <textarea id="descpCase" class="text"></textarea>
+                </div>
+                  <button onclick="window.location.href='#invis1'" id="submitCase" type="reset" class="caseDetailSubmit">Next</button>
+                  <p class="stepButton">Step 2: Client Details ></p>
+                </form>
+
+              </div>
+<!-- Close Step 1 -->
+            </div> 
+
+
+<!-- Step 2 -->
+        <li><div class="divider grey"></div></li>
+        <li><div class="node grey"></div>
+            <p id="check2">Step 2: Client Details</p></li>
+
+            <div id="F2" class="F2">
+
+              <div class = "caseform">
+                <form>
+
+                <div class="Defendant">
+
+                  <div class="DefendantForm">
+                    <h3 class="subtaskHeading">Client</h3>
+
+                  <label for="cname">Name</label> <span id="name_regex"></span>
+                  <input type="text" id="clientName" name="clientName">
+
+                  <label for="dob">Date of Birth</label> <span id="dob_regex"></span>
+                  <input type="date" id="clientDob" name="clientDob">
+
+                  <label for="cname">Phone</label> <span id="phone_regex"></span>
+                  <input type="text" id="clientPhone" name="clientPhone">
+
+                  <label for="cname">Email</label> <span id="email_regex"></span>
+                  <input type="email" id="clientEmail" name="clientEmail">
+                  
+                  <label for="cname">Address</label><span id="address_regex"></span>
+                  <input type="text" id="clientAddress" name="clientAddress">
+                
+                  </div>
+
+
+                </div>
+
+                <div class="Plaintiff">
+
+                  <div class="PlaintiffForm">
+
+                    <h3 class="subtaskHeading">Opposing Party</h3>
+
+                    <label for="partyName">Party Name</label><span id="oppName_regex"></span>
+                    <input type="text" id="partyName" name="partyName">
+  
+                    <label for="OPaddress">Address</label><span id="oppAdd_regex"></span>
+                    <input type="text" id="OPaddress" name="OPaddress">
+
+                    <label for="OPlawyer">Opposing Counsel</label><span id="oppCounc_regex"></span>
+                    <input type="text" id="OPlawyer" name="OPlawyer">
+                  
+                    </div>
+
+
+                </div>
+
+                <!-- onclick="window.location.href='#invis3'" -->
+                <button id="clientSubmit" type = "button" class="clientSubmit">Next</button>
+                <p class="stepButton1">Step 2: Client Details ></p>
+
+                <div id="invis1" class="invis1">
+
+                </div>
+                
+                
+              </form>
+              <!-- <p class="stepButton">Step 2: Client Details ></p> -->
+              </div>
+<!-- CLOSE STEP 2 -->
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Step 3 -->
+        <li><div class="divider grey"></div></li>
+        <li><div class="node grey"></div>
+            <p>Step 3: Workflow</p></li>
+          <div class="F3">
+              <div class = "caseform">
+
+                <div class ="sidebar">
+            
+                  <h3 class="subtaskHeading">Workflow Subtasks</h3>
+              
+                  <div id ="mytasks" class="mytasks">
+                  </div>
+
+
+                  <div id ="subtaskForm" class = "subtaskForm">
+
+                    <img id ="cross" class = "cross" src="../assets/del.png">
+
+                    <h3 class="subtaskHeading">Add Subtasks</h3>
+
+                    <label for="cname">Task Name</label>
+                    <input class="text1" type="text1" id="taskNameSub" name="cname">
+                  
+                    <label for="lawyers">Assigned To</label>
+                      <select id="assignToSub" class = "myselect">
+                      </select>
+                  
+                    <label for="desc">Description</label>
+                    <textarea id="DescpSub" class="text2"></textarea>
+
+                    <button type="button" id="addSub" class="addSub">Add</button>
+                  
+                  </div>
+
+
+                </div> 
+
+              <form class = "caseformWorkflow">
+                <label for="cname">Task Name</label>
+                <input class="text1" type="text1" id="tname" name="cname">
+              
+                <label for="lawyers">Assigned To</label>
+                  <select id="assignSelect" class = "myselect">
+                  </select>
+              
+                <label for="desc">Description</label>
+                <textarea id="workflowDescp" class="text2"></textarea>
+            
+                <!-- <label for="cname">Add Subtasks</label>
+                <input class="text1" type="text1" id="subtasks1" name="subt"> -->
+
+                <div>
+                  <button type="button" id="createWorkFlow" class="SubmitForWorkflow">+ Create Task</button>
+                  <button type="button" id="addTask1" class="addtask1">Add Subtask</button>
+                
+                </div>
+            
+   
+            
+            
+                
+            <p class="stepButton">Step 3: Add Files ></p>
+
+
+                <div id="invis2" class="invis2">
+
+                </div>
+                <button onclick="window.location.href='#invis3'" type="button" id="yes" class="yes" >Next </button>
+      
+              </form>
+    
+          <!-- Close Caseform -->
+          </div>
+
+          <!-- Close F3 -->
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li><div class="divider grey"></div></li>
+        <li><div class="node grey"></div>
+            <p>Step 4: Add Files</p></li>
+            <div class="F4">
+
+
+              <div class="caseform">
+
+                <label for="lawyers">Select Document to Upload</label>
+                <select id="fileSelect" class = "fileSelect">
+                  <option value="EID">Emirates_ID</option>
+                  <option value="Passport">Passport</option>
+                  <option value="POA">Power_of_Attorney</option>
+                  <option value="Visa">Visa</option>
+            
+                </select>
+
+                <div id ="uploadedDocuments" class="uploadedDocuments">
+                  <h3 class="subtaskHeading">Uploaded Documents</h3>
+              
+                </div>
+
+              <div class="drag-area" id="drag-area">
+                <div class="imageShow" id="imageShow"></div>
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <header>Drag & Drop to Upload File <br> Supported Types: JPG/JPEG/PNG</header>
+                <span>OR</span>
+                <button id="browse">Browse File</button>
+                <input type="file" hidden id="file">
+              </div>
+              <div class="choose_another_img">
+                <button id="chooseimg" class="hidden" > Clear Current Image </button>
+              </div>
+              <div class="submit">
+                <button id="nextpg" class="hidden" > Submit </button>
+              </div>
+
+
+
+              </div>
+            </div>
+
+            <li><div class="divider grey"></div></li>
+
+    </ul>
+    <input type="button" value="Next" id="next"/>
+    <input type="button" value="Clear" id="clear"/>
+
+    
+<button id="finalSubmit" type="reset" class="finalSubmit">Finish</button>
+  
+
+</div>
+
+<div id ="successfulSubmit" class = "successfulSubmit">
+
+
+  <h3 class="subtaskHeading">Case Added Successfully!</h3>
+
+  <img class ="gif" src="../assets/tick.gif">
+  
+  <div class="myButton">
+    <button onclick="window.location.href='../Cases/cases.html'" id="goToCases" type="reset" class="goToCases">Go to Cases</button>
+
+  </div>
+ 
+
+ 
+
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body> 
+</html>

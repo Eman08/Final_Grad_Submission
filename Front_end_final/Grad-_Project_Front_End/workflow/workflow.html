@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="workflow.css" rel="stylesheet">
+    <link href="../generic.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <script type="module" src="workflow.js" > </script>
+  
+    <!-- <script type = "text/javascript" >
+      function myfunction(){
+      alert("I reach here");
+      } -->
+      </script>
+    
+    <title>Cases</title>
+  </head>
+  <body id="workflow">
+            <div id="full" class="full">
+
+            </div>
+  <div class="greenbar">
+    <img class="smallLogo" src="../assets/lawflow.png" >
+  </div>
+
+  <div class="topbar">
+    <h1 id="heading_main" margin-left="0px"></h1>
+  </div>
+
+  </div>
+  <div class="lawflow">
+    <p>LAWFLOW</p>
+  </div>
+
+  <div class="dashboard" onclick="location.href='../dashboard/dashboard_1.html'"> <img class="iconDashboard" src="../assets/dashboard.png" >
+    <p>My Dashboard</p>
+  </div>
+
+<div class="search"> <img class="iconSearch" src="../assets/search.png" >
+  <p>Search</p>
+</div>
+
+<div class="cases" onclick="location.href='../Cases/cases.html'"> <img class="iconCases" src="../assets/gavel.png" >
+  <p>Cases</p>
+</div>
+
+<div class="calendar" onclick="location.href='../appointments_v2/appointments.html'"> <img class="iconCalendar" src="../assets/calendar.png" >
+  <p>Calendar</p>
+</div>
+
+<div class="todo" onclick="location.href='../to_do_lists/todolist.html'"> <img class="iconTodo" src="../assets/todo.png" >
+  <p onclick="">To-Do List</p>
+</div>
+
+
+<div class="setting" onclick="location.href='../Settings/setting.html'"> <img class="iconSetting" src="../assets/settings.png" >
+  <p>Settings</p>
+</div>
+<div class="title">
+  <i id="chevron" class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>
+  <h1 class="header">Case Progress</h1>
+  <h3 class="case_id"></h3>
+  <div id ="subtaskForm" class = "subtaskForm">
+    <img id ="cross" class = "cross" src="../assets/del.png">
+    <h3 class="subtaskHeading">Subtasks</h3>
+    <div id="display_subtasks">
+    </div>
+  </div>
+  <div id ="edit_workflow" class = "edit_workflow_class">
+
+    <img id ="crosswf" class = "crosswf" src="../assets/del.png">
+    <h3 class="subtaskHeading">Edit Workflow</h3>
+    <label for="fname"><b>Task Title</b></label>
+    <br>
+    <input type="text" name="tasktitle" id="tasktitle" >
+    <br><br>
+    <label for="dob"><b>Task Description</b></label>
+    <br>
+    <textarea id="taskDescription" name="taskDescription" rows="4" cols="50"></textarea>
+    
+    <button id="submitbuttontask">Submit</button>
+
+  </div>
+
+
+  <div id="workflow_display"> 
+
+  </div>
+  </div>
+  <div id="cover-spin"></div>
+
+  </body> 
+</html>

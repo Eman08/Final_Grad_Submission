@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--meta charset="UTF-8"-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"-->
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="../generic.css" rel="stylesheet">
+    <link href="viewfiles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba43bee765.js" crossorigin="anonymous"></script>
+    <script type="module" src="viewfiles.js" > </script>
+  
+    <!-- <script type = "text/javascript" >
+      function myfunction(){
+      alert("I reach here");
+      } -->
+      <!-- </script> -->
+    
+    <title>Cases</title>
+</head>
+<body id="category">
+
+    
+  <div class="greenbar">
+    <img class="smallLogo" src="../assets/lawflow.png" >
+  </div>
+
+  <div class="topbar">
+    <h1 id="heading_main" margin-left="0px"></h1>
+  </div>
+
+  </div>
+  <div class="lawflow">
+    <p>LAWFLOW</p>
+  </div>
+
+  <div class="dashboard" onclick="location.href='../dashboard/dashboard_1.html'"> <img class="iconDashboard" src="../assets/dashboard.png" >
+    <p>My Dashboard</p>
+  </div>
+
+<div class="search"> <img class="iconSearch" src="../assets/search.png" >
+  <p>Search</p>
+</div>
+
+<div class="cases" onclick="location.href='../Cases/cases.html'"> <img class="iconCases" src="../assets/gavel.png" >
+  <p>Cases</p>
+</div>
+
+<div class="calendar" onclick="location.href='../appointments_v2/appointments.html'"> <img class="iconCalendar" src="../assets/calendar.png" >
+  <p>Calendar</p>
+</div>
+
+<div class="todo" onclick="location.href='../to_do_lists/todolist.html'"> <img class="iconTodo" src="../assets/todo.png" >
+  <p>To-Do List</p>
+</div>
+
+
+<div class="setting" onclick="location.href='../Settings/setting.html'"> <img class="iconSetting" src="../assets/settings.png" >
+  <p>Settings</p>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<div class="header">
+    <div class="title">
+      <h1>Cases</h1>
+      <button id="addfiles" onclick="window.location.href='../Case_Files/add_files.html'">Add Files</button>
+      <h2 class="h2">Case Files</h2>
+    </div>
+    <a href="../Cases/cases.html"><img src="../assets/back.png" class="backLink"></a>
+</div>
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<div id="filetop" class ="filetop">
+
+    <div class = "gavelIcon">
+        <img src="../assets/gavelBlue.png" class="gavelIconPic">
+    </div>
+
+    <div id = "HeaderDisplay" class="HeaderDisplay">
+
+      <p id="casename" class = "casename"> </p>
+
+      <p id="caseid" class = "caseid"></p>
+
+    </div>
+
+
+
+
+    <div class = "newFolder">
+
+    </div>
+</div>
+
+<!-- ------------------------------------------------------------------------- -->
+<div class ="fileSearch">
+
+  <div class = "caseIcon">
+      <div class="icon">
+          <img src="../assets/caseSearch.png" class="searchIcon">
+      </div>
+      
+      <div class = "inputSearch">
+          <input class ="enterFilename" type="text" id="searchFile" name="searchFile" placeholder="Search filename...">
+          <p id="searchBut" type="reset" class="searchFilename">SEARCH</p>
+          <div id="results" class="results">
+            <div id="viewer" class="viewer"></div>
+            <p class="resultHeader">Search Results</h4>
+              <img id = "closeWindow" src="../assets/del.png" class="closeWindow">
+
+          </div>
+          
+      </div>
+
+
+  </div>
+</div>
+
+<!-- ------------------------------------------------------------------------- -->
+
+<div class ="filebase">
+
+    <div id = "displayCategories" class ="displayCategories">
+
+
+
+    </div>
+
+    <div class ="categoryName">
+      <h3 class="boxHeadingCat">Category</h3>
+
+    </div>
+
+    <div class ="categoryModified">
+      <h3 class="boxHeading">Last Modified</h3>
+
+    </div>
+
+    <div class ="categorySize">
+      <h3 class="boxHeading">Type</h3>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body> 
+</html>
