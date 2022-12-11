@@ -1,15 +1,20 @@
-Lawflow: A legal management application for lawyers with several other hands on features that may help make their work easier
+# Lawflow: 
+
+A legal management application for lawyers with several other hands on features that may help make their work easier
 Note: This application is best viewable on screens of sizes 13-15 inches and WINDOWS OS only.
 
-Downloading the installer:
+## Downloading the installer:
+
 Download the file installer and unzip it, here you will find a lawflow.exe file
 ![image](https://user-images.githubusercontent.com/77325198/206891022-b6923c24-ef41-4b66-8d3d-1d6040c9c599.png)
 
 For the purpose of this testing we have already set up an account that you may wish to use:
+
 **Username : AbeeraAmir**
+
 **Password: Test123**
 
-Application overview:
+## Application overview:
 
 On opening/ logging in you will notice the dashboard:
 ![image](https://user-images.githubusercontent.com/77325198/206891093-d580fb42-0541-40bb-a92b-6dafc472477e.png)
@@ -20,7 +25,7 @@ On clicking cases, the below page will open up:
 To view the case progress, case files or the client details you have to click on one of the cases on the left side first:
 ![image](https://user-images.githubusercontent.com/77325198/206891157-2c1240dd-1e5c-4aa3-a692-bb824822f6f2.png)
 
-**Creating a new case:
+### Creating a new case:
 
 1) Create basic case details
 ![image](https://user-images.githubusercontent.com/77325198/206891196-7a15cd44-5ef0-4365-9d11-09553177487d.png)
@@ -33,7 +38,7 @@ In add participants you can only add existing lawyers, some of the accounts that
 Clicking on add subtasks will you give an option to create a sub task within the current main task:
 ![image](https://user-images.githubusercontent.com/77325198/206891383-14c1144e-2a23-46c4-b43f-9eaf22fde00a.png)
 
-**Clicking on create task, creates a new main task with the sub tasks you have added
+### Clicking on create task, creates a new main task with the sub tasks you have added
 
 4) Finally add all the compulsory files required in a case:
 ![image](https://user-images.githubusercontent.com/77325198/206891431-c524e987-b0a8-4229-b18d-8e9a18cd70e4.png)
@@ -55,7 +60,7 @@ However if a file is not translated, you will be met with a warning, and will ha
  
  *NOTE: The server this api is being hosted on MIGHT go on an overload as it is a free service, as a result the categories may sometimes not show a response.
 
-**Case progress:**
+### Case progress:
 To view the case progress simply click on view case progress after selecting the case on the main cases page
 ![image](https://user-images.githubusercontent.com/77325198/206891910-79346e5f-65d5-4d5a-b1ba-25cf7d788188.png)
 
@@ -65,19 +70,19 @@ Here you can see all of the case progresses based on the tasks you have created 
 Tasks with subtask have a field called: view more details
 ![image](https://user-images.githubusercontent.com/77325198/206892055-863b94c9-0a42-4be1-a34b-7d650b3415ea.png)
 
-**Calendar:**
+### Calendar:
 Here you can see the upcoming meetings by clicking on any date:
 ![image](https://user-images.githubusercontent.com/77325198/206892159-e88f8f9e-10e6-46b4-b0e1-c5a8c22a997f.png)
 
 To create an event, click on add event:
 ![image](https://user-images.githubusercontent.com/77325198/206892186-2cf35b8c-8f71-43a3-99da-74e98b1a780f.png)
 
-**TO DO LIST:**
+### TO DO LIST:
 The tasks from todo list are assigned based on the workflow assignment
 ![image](https://user-images.githubusercontent.com/77325198/206892224-187b20d1-4241-444d-8814-e47867964a2f.png)
 Clicking on the three dots above, moves a task from one state to another, all the members assigned on the case also get notified of this change
 
-**SEARCH:**
+### SEARCH:
 1) Search by keyword/ filename:
 Click on the required search option and add text in the search field:
 ![image](https://user-images.githubusercontent.com/77325198/206892333-0ddf3dd9-bab6-4b52-9871-f21dc4abc738.png)
@@ -86,6 +91,9 @@ Click on the required search option and add text in the search field:
 ![image](https://user-images.githubusercontent.com/77325198/206892624-c3ce06db-10dd-415c-92de-ce2c9620bea5.png)
 
 
+## Run code directly
+
+To run the code directly without the use of the installer, use command `npm start` under - folder after downloading all the necessary npm packages.
 
 
 
