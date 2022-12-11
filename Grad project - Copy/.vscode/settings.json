@@ -1,0 +1,10 @@
+{
+    "python.analysis.extraPaths": [
+        "./Grad_Project",
+        "./Grad_Project/login_modules",
+        "./Grad_Project/login_modules/models",
+        "./Grad_Project/case_structuring/routes",
+        "./Grad_Project/case_structuring"
+    ]
+
+}
