@@ -5,7 +5,7 @@ Note: This application is best viewed on screens of 15 inches and compatible wit
 
 ## Downloading the installer:
 
-Download the file installer and unzip it, you will find a lawflow.exe file
+Download the folder installer and unzip the file lawflow-win32-x64.zip, you will find a lawflow.exe file
 ![image](https://user-images.githubusercontent.com/77325198/206891022-b6923c24-ef41-4b66-8d3d-1d6040c9c599.png)
 
 For the purpose of testing, we have already set up an account that you may wish to use:
